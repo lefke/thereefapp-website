@@ -7,14 +7,14 @@ module.exports = {
     // You can overwrite values here that are used for the SEO component
     // You can also add new values here to query them like usual
     // See all options: https://github.com/LekoArts/gatsby-themes/blob/main/themes/gatsby-theme-cara/gatsby-config.js
-    siteTitle: `Cara`,
-    siteTitleAlt: `Cara - Gatsby Starter Portfolio`,
-    siteHeadline: `Cara - Gatsby Theme from @lekoarts`,
-    siteUrl: `https://cara.lekoarts.de`,
-    siteDescription: `Playful and Colorful One-Page portfolio featuring Parallax effects and animations`,
+    siteTitle: `The Reef App`,
+    siteTitleAlt: `The Reef App - The Coral Restoration Community`,
+    siteHeadline: `The Reef App - The Coral Restoration Community`,
+    siteUrl: `https://www.thereefapp.com`,
+    siteDescription: `Our mission is to empowering anyone to participate in the global mission to save coral reefs by building a digital community of people and projects working in coral restoration. Currently in early stage development, dignup to be notified of launch and participate in research and development`,
     siteLanguage: `en`,
-    siteImage: `/banner.jpg`,
-    author: `@lekoarts_de`,
+    siteImage: `/rich-link-image.png`,
+    author: `@thereefapp`,
   },
   plugins: [
     {
