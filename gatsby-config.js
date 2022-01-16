@@ -88,5 +88,13 @@ module.exports = {
         enableWebVitalsTracking: true,
       },
     },
+    {
+      resolve: 'gatsby-plugin-web-font-loader',
+      options: {
+        typekit: {
+            id: 'qel2ulv'
+        }
+      }
+    }
   ].filter(Boolean),
 }
