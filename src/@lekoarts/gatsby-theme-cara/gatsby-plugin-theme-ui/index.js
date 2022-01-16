@@ -8,7 +8,7 @@ const theme = merge(tailwind, {
   },
   fonts: {
     body: 'aktiv-grotesk, system-ui, sans-serif',
-    heading: 'aktiv-grotesk, "Avenir Next", sans-serif',
+    heading: 'adelle-sans, aktiv-grotesk, "Avenir Next", sans-serif',
     monospace: 'Menlo, monospace',
   },
   fontWeights: {
@@ -36,8 +36,8 @@ const theme = merge(tailwind, {
     icon_green: tailwind.colors.green[5],
     modes: {
       light: {
-        text: tailwind.colors.gray[8],
-        heading: tailwind.colors.black,
+        text: `#1C0248`,
+        heading: `#1C0248`,
         primary: tailwind.colors.orange[7],
         background: `#FEA8C3`,
         divider: tailwind.colors.gray[2],
