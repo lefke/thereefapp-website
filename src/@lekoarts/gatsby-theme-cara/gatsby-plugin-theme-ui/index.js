@@ -6,6 +6,16 @@ const theme = merge(tailwind, {
   config: {
     useCustomProperties: true,
   },
+  fonts: {
+    body: 'aktiv-grotesk, system-ui, sans-serif',
+    heading: 'aktiv-grotesk, "Avenir Next", sans-serif',
+    monospace: 'Menlo, monospace',
+  },
+  fontWeights: {
+    body: 400,
+    heading: 900,
+    bold: 700,
+  },
   colors: {
     primary: tailwind.colors.orange[4],
     secondary: tailwind.colors.indigo[6],
