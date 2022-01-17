@@ -150,7 +150,8 @@ const theme = merge(tailwind, {
     bigger: {
       p: {
         fontSize: [2, 3, 4],
-        marginTop: '1em',
+        marginTop: '1',
+        lineHeight: '1',
       },
     },
   },
