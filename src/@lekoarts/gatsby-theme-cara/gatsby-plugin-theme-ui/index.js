@@ -2,7 +2,7 @@ import { merge } from "theme-ui"
 import { tailwind } from "@theme-ui/presets"
 
 const theme = merge(tailwind, {
-  initialColorModeName: `dark`,
+  initialColorModeName: `light`,
   config: {
     useCustomProperties: true,
   },
@@ -100,14 +100,14 @@ const theme = merge(tailwind, {
       mt: 2,
       mb: 3,
       textShadow: `rgba(255, 255, 255, 0.15) 0px 5px 35px`,
-      letterSpacing: `0.05em`,
+      letterSpacing: `0em`,
       color: `heading`,
     },
     h2: {
       fontSize: [4, 5, 6],
       mt: 2,
       mb: 2,
-      letterSpacing: `0.05em`,
+      letterSpacing: `0em`,
       color: `heading`,
     },
     h3: {
