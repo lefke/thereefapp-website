@@ -21,11 +21,11 @@ const ProjectCard = ({ link, title, children, bg }: ProjectCardProps) => (
       borderRadius: `lg`,
       px: 4,
       py: [4, 5],
-      color: `white`,
+      color: `#1C0248`,
       background: bg || `none`,
       transition: `all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275) !important`,
       "&:hover": {
-        color: `white !important`,
+        color: `#1C0248 !important`,
         transform: `translateY(-5px)`,
         boxShadow: `xl`,
       },
@@ -42,7 +42,7 @@ const ProjectCard = ({ link, title, children, bg }: ProjectCardProps) => (
     >
       {title}
     </div>
-    <div sx={{ opacity: 0.85, textShadow: `0 2px 10px rgba(0, 0, 0, 0.3)` }}>{children}</div>
+    <div sx={{ opacity: 0.85, }}>{children}</div>
   </a>
 )
 
