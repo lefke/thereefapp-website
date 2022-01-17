@@ -1,8 +1,8 @@
 /** @jsx jsx */
 import { jsx } from "theme-ui"
-import Divider from "@lekoarts/gatsby-theme-cara/src/elements/divider"
-import Inner from "@lekoarts/gatsby-theme-cara/src/elements/inner"
-import Content from "@lekoarts/gatsby-theme-cara/src/elements/content"
+import Divider from "../elements/divider"
+import Inner from "../elements/inner"
+import Content from "../elements/content"
 import Svg from "./svg"
 import { UpDown, UpDownWide } from "../styles/animations"
 // @ts-ignore
@@ -12,8 +12,8 @@ const Hero = ({ offset, factor = 1 }: { offset: number; factor?: number }) => (
   <div>
     <Divider speed={0.2} offset={offset} factor={factor}>
       <UpDown>
-        <Svg icon="triangle" hiddenMobile width={48} color="icon_red" left="10%" top="20%" />
-        <Svg icon="hexa" width={48} color="icon_yellow" left="60%" top="70%" />
+        <Svg icon="triangle" hiddenMobile width={128} color="icon_red" left="10%" top="20%" />
+        <Svg icon="hexa" width={148} color="icon_yellow" left="60%" top="70%" />
         <Svg icon="box" width={6} color="icon_darker" left="60%" top="15%" />
       </UpDown>
       <UpDownWide>
@@ -29,10 +29,10 @@ const Hero = ({ offset, factor = 1 }: { offset: number; factor?: number }) => (
       <Svg icon="circle" width={6} color="icon_darkest" left="4%" top="20%" />
       <Svg icon="circle" width={12} color="icon_darkest" left="50%" top="60%" />
       <Svg icon="upDown" width={8} color="icon_darkest" left="95%" top="90%" />
-      <Svg icon="upDown" hiddenMobile width={24} color="icon_darker" left="40%" top="80%" />
+      <Svg icon="upDown" hiddenMobile width={88} color="icon_darker" left="40%" top="80%" />
       <Svg icon="triangle" width={8} color="icon_darker" left="25%" top="5%" />
       <Svg icon="circle" width={64} color="icon_red" left="90%" top="5%" />
-      <Svg icon="box" hiddenMobile width={64} color="icon_purple" left="5%" top="90%" />
+      <Svg icon="box" hiddenMobile width={140} color="icon_purple" left="5%" top="90%" />
       <Svg icon="box" width={6} color="icon_darkest" left="10%" top="10%" />
       <Svg icon="box" width={12} color="icon_darkest" left="40%" top="30%" />
       <Svg icon="hexa" width={16} color="icon_darker" left="10%" top="50%" />

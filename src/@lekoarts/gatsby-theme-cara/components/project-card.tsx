@@ -42,7 +42,7 @@ const ProjectCard = ({ link, title, children, bg }: ProjectCardProps) => (
     >
       {title}
     </div>
-    <div sx={{ opacity: 0.85, }}>{children}</div>
+    <div sx={{ opacity: 0.85 }}>{children}</div>
   </a>
 )
 
