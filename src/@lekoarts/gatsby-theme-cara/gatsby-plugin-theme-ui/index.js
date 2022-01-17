@@ -7,9 +7,9 @@ const theme = merge(tailwind, {
     useCustomProperties: true,
   },
   fonts: {
-    body: 'adelle-sans, aktiv-grotesk, system-ui, sans-serif',
-    heading: 'adelle-sans, "Avenir Next", sans-serif',
-    monospace: 'Menlo, monospace',
+    body: 'nort, adelle-sans, aktiv-grotesk, system-ui, sans-serif',
+    heading: 'nort, adelle-sans, "Avenir Next", sans-serif',
+    monospace: 'nort, Menlo, monospace',
   },
   fontWeights: {
     body: 400,
@@ -150,6 +150,7 @@ const theme = merge(tailwind, {
     bigger: {
       p: {
         fontSize: [2, 3, 4],
+        marginTop: '1em',
       },
     },
   },

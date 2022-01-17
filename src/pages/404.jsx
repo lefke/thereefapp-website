@@ -18,7 +18,7 @@ const NotFound = () => (
         <Divider speed={0.2} offset={0} factor={1}>
           <UpDown>
             <Svg icon="triangle" hiddenMobile width={48} stroke color="icon_orange" left="10%" top="20%" />
-            <Svg icon="hexa" width={48} stroke color="icon_red" left="60%" top="70%" />
+            <Svg icon="hexa" width={48} fill color="icon_yellow" left="60%" top="70%" />
             <Svg icon="box" width={6} color="icon_darker" left="60%" top="15%" />
           </UpDown>
           <UpDownWide>
