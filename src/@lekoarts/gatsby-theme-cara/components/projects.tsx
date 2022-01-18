@@ -34,7 +34,7 @@ const Projects = ({ offset, factor = 2 }: { offset: number; factor?: number }) =
     <Divider speed={0.1} offset={offset} factor={factor}>
       <UpDown>
         <Svg icon="box" width={6} color="icon_brightest" left="85%" top="75%" />
-        <Svg icon="upDown" width={8} color="icon_teal" left="70%" top="20%" />
+        <Svg icon="upDown" stroke width={8} color="icon_teal" left="70%" top="20%" />
         <Svg icon="triangle" width={8} color="icon_orange" left="25%" top="5%" />
         <Svg icon="circle" hiddenMobile width={24} color="icon_brightest" left="17%" top="60%" />
       </UpDown>
@@ -44,7 +44,7 @@ const Projects = ({ offset, factor = 2 }: { offset: number; factor?: number }) =
         <Svg icon="circle" width={16} color="icon_yellow" left="70%" top="90%" />
         <Svg icon="triangle" hiddenMobile width={16} color="icon_teal" left="18%" top="75%" />
         <Svg icon="circle" width={6} color="icon_brightest" left="75%" top="10%" />
-        <Svg icon="upDown" hiddenMobile width={8} color="icon_green" left="45%" top="10%" />
+        <Svg icon="upDown" stroke hiddenMobile width={8} color="icon_green" left="45%" top="10%" />
       </UpDownWide>
       <Svg icon="circle" hiddenMobile width={6} color="icon_brightest" left="4%" top="20%" />
       <Svg icon="circle" width={12} color="icon_pink" left="80%" top="60%" />
