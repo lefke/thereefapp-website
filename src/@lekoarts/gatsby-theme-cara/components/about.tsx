@@ -27,12 +27,11 @@ const About = ({ offset, factor = 1 }: { offset: number; factor?: number }) => (
         <Svg icon="arrowUp" hiddenMobile width={16} color="icon_purple" left="5%" top="80%" />
         <Svg icon="triangle" width={12} color="icon_brightest" left="95%" top="50%" />
         <Svg icon="circle" hiddenMobile width={6} color="icon_brightest" left="85%" top="15%" />
-        <Svg icon="upDown" stroke hiddenMobile width={8} color="icon_darkest" left="45%" top="10%" />
+        <img width="300" height="auto" src="/parrot-fish@2x.png" style={{position: "absolute", left: "30%", top: "90%"}} />
       </UpDownWide>
       <Svg icon="circle" hiddenMobile width={6} color="icon_brightest" left="4%" top="20%" />
       <Svg icon="circle" width={12} color="icon_darkest" left="70%" top="60%" />
       <Svg icon="box" width={6} color="icon_orange" left="10%" top="10%" />
-      <Svg icon="box" width={12} color="icon_darkest" left="20%" top="30%" />
       <Svg icon="hexa" width={8} color="icon_darkest" left="80%" top="70%" />
     </Divider>
     <Content speed={0.4} offset={offset} factor={factor} >
