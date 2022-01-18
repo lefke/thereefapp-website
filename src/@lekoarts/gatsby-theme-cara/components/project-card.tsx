@@ -2,13 +2,14 @@
 import { jsx } from "theme-ui"
 
 type ProjectCardProps = {
+  image: string
   link: string
   title: string
   children: React.ReactNode
   bg: string
 }
 
-const ProjectCard = ({ link, title, children, bg }: ProjectCardProps) => (
+const ProjectCard = ({ image, link, title, children, bg }: ProjectCardProps) => (
   <a
     href={link}
     target="_blank"
@@ -20,7 +21,7 @@ const ProjectCard = ({ link, title, children, bg }: ProjectCardProps) => (
       textDecoration: `none`,
       borderRadius: `lg`,
       px: 4,
-      py: [4, 5],
+      py: [3, 4],
       color: `#1C0248`,
       background: bg || `none`,
       transition: `all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275) !important`,
@@ -31,10 +32,16 @@ const ProjectCard = ({ link, title, children, bg }: ProjectCardProps) => (
       },
     }}
   >
+  
+    <img width="100%" height="auto" src={image} 
+        sx={{
+            mb: 3,
+        }}
+    />
     <div
       sx={{
-        pb: 4,
-        fontSize: [4, 5],
+        pb: 3,
+        fontSize: [3, 4],
         fontWeight: `bold`,
         lineHeight: 1,
       }}

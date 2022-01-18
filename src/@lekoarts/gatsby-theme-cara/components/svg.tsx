@@ -24,7 +24,7 @@ const icons = {
   },
   upDown: {
     shape: (
-        <path d="M26.0371 2C13.2872 6.71695 19.1823 11.0907 17.8116 16.7548C15.5009 26.3038 -2.30616 16.7548 2.86563 35.0163" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M26.0371 2C13.2872 6.71695 19.1823 11.0907 17.8116 16.7548C15.5009 26.3038 -2.30616 16.7548 2.86563 35.0163" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"/>
     ),
     viewBox: `0 0 30 44.58`,
   },
