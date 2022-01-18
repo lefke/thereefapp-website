@@ -8,7 +8,7 @@ import { UpDown, UpDownWide } from "../styles/animations"
 import AboutMDX from "../sections/about"
 
 const About = ({ offset, factor = 1 }: { offset: number; factor?: number }) => (
-  <div>
+  <div >
     <Divider
       bg="divider"
       clipPath="polygon(0 16%, 100% 4%, 100% 82%, 0 94%)"
@@ -35,8 +35,8 @@ const About = ({ offset, factor = 1 }: { offset: number; factor?: number }) => (
       <Svg icon="box" width={12} color="icon_darkest" left="20%" top="30%" />
       <Svg icon="hexa" width={8} color="icon_darkest" left="80%" top="70%" />
     </Divider>
-    <Content speed={0.4} offset={offset} factor={factor}>
-      <Inner>
+    <Content speed={0.4} offset={offset} factor={factor} >
+      <Inner >
         <AboutMDX />
       </Inner>
     </Content>

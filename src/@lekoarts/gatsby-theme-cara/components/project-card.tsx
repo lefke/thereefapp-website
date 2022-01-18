@@ -34,7 +34,7 @@ const ProjectCard = ({ link, title, children, bg }: ProjectCardProps) => (
     <div
       sx={{
         letterSpacing: `wide`,
-        pt: 4,
+        pb: 4,
         fontSize: [4, 5],
         fontWeight: `bold`,
         lineHeight: 1,

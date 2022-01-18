@@ -24,9 +24,9 @@ const theme = merge(tailwind, {
     background: '#1C0248',
     divider: '#fe9bba',
     textMuted: '#FF2D1D',
-    icon_brightest: 'rgba(255, 255, 255, 0.1)',
-    icon_darker:  'rgba(255, 255, 255, 0.2)',
-    icon_darkest:  'rgba(255, 255, 255, 0.3)',
+    icon_brightest: 'rgba(255, 255, 255, 0.08)',
+    icon_darker:  'rgba(255, 255, 255, 0.16)',
+    icon_darkest:  'rgba(255, 255, 255, 0.24)',
     icon_red: '#FF2D1D',
     icon_blue: '#30B7D5',
     icon_orange: '#FF2D1D',
@@ -54,7 +54,8 @@ const theme = merge(tailwind, {
     textAlign: `center`,
     color: `textMuted`,
     px: [2, 3],
-    py: [3, 4],
+    pt: [4, 5],
+    pb: [0, 0],
   },
   styles: {
     root: {
@@ -77,6 +78,14 @@ const theme = merge(tailwind, {
       },
     },
     p: {
+      fontSize: [1, 2],
+      letterSpacing: `-0.003em`,
+      lineHeight: `body`,
+      "--baseline-multiplier": 0.179,
+      "--x-height-multiplier": 0.35,
+      color: `text`,
+    },
+    li: {
       fontSize: [1, 2],
       letterSpacing: `-0.003em`,
       lineHeight: `body`,

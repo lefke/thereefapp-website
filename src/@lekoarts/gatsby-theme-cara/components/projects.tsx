@@ -11,7 +11,7 @@ import ProjectsMDX from "../sections/projects"
 const Projects = ({ offset, factor = 2 }: { offset: number; factor?: number }) => (
   <div>
     <Divider
-      bg="#30B7D5"
+      bg="#ffffff"
       sx={{ clipPath: `polygon(0 15%, 100% 25%, 100% 85%, 0 75%)` }}
       speed={-0.2}
       offset={1.1}
@@ -24,7 +24,7 @@ const Projects = ({ offset, factor = 2 }: { offset: number; factor?: number }) =
             display: `grid`,
             gridGap: [4, 4, 4, 5],
             gridTemplateColumns: [`1fr`, `1fr`, `repeat(2, 1fr)`],
-            h2: { gridColumn: `-1/1`, color: `white !important` },
+            h2: { gridColumn: `-1/1` },
           }}
         >
           <ProjectsMDX />
