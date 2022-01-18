@@ -11,7 +11,7 @@ module.exports = {
     siteTitleAlt: `The Reef App - The Coral Restoration Community`,
     siteHeadline: `The Reef App - The Coral Restoration Community`,
     siteUrl: `https://www.thereefapp.com`,
-    siteDescription: `Our mission is to empower anyone to participate in the global mission to save coral reefs by building a digital community of people and projects working in coral restoration. Currently in early stage development, signup for news and developments or contact us to join the team`,
+    siteDescription: `Our mission is to empower people and projects working in coral restoration by building a digital community for collaboration and knowledge sharing. Currently in early stage development, signup for news and developments or contact us to join the team`,
     siteLanguage: `en`,
     siteImage: `/rich-link-image.png`,
     author: `@thereefapp`,
