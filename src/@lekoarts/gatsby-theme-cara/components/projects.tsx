@@ -49,7 +49,7 @@ const Projects = ({ offset, factor = 2 }: { offset: number; factor?: number }) =
       </UpDownWide>
       <Svg icon="box" width={6} color="icon_orange" left="10%" top="10%" />
       <Svg icon="box" width={12} color="icon_yellow" left="29%" top="26%" />
-        <img width="450" height="auto" src="/no-lotion@2x.png" style={{position: "absolute", right: "0%", top: "70%"}} />
+        <img width="450" height="auto" src="/no-lotion@2x.png" style={{position: "absolute", right: "0%", top: "54%"}} />
       <Svg icon="hexa" width={16} color="icon_red" left="75%" top="30%" />
     </Divider>
   </div>
