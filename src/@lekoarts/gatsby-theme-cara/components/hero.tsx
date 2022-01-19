@@ -27,7 +27,7 @@ const Hero = ({ offset, factor = 1 }: { offset: number; factor?: number }) => (
       </UpDownWide>
       <UpDown>
         <Svg icon="triangle" hiddenMobile width={128} color="icon_red" left="10%" top="20%" />
-        <img width="400" height="auto" src="/fish.png" alt="fish floating in header" style={{position: "absolute", left: "60%", top: "70%"}} />
+        <img width="400" height="auto" src="/fish@2x.png" alt="fish floating in header" style={{position: "absolute", left: "60%", top: "70%"}} />
         <Svg icon="box" width={6} color="icon_darker" left="60%" top="15%" />
       </UpDown>
     </Divider>

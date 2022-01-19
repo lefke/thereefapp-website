@@ -3,13 +3,14 @@ import { jsx } from "theme-ui"
 
 type ProjectCardProps = {
   image: string
+  imageAlt: string
   link: string
   title: string
   children: React.ReactNode
   bg: string
 }
 
-const ProjectCard = ({ image, link, title, children, bg }: ProjectCardProps) => (
+const ProjectCard = ({ image, imageAlt, link, title, children, bg }: ProjectCardProps) => (
   <a
     href={link}
     target="_blank"
@@ -33,7 +34,7 @@ const ProjectCard = ({ image, link, title, children, bg }: ProjectCardProps) => 
     }}
   >
   
-    <img width="520px" height="232px" src={image} 
+    <img width="520px" height="232px" src={image} alt={imageAlt}
         sx={{
             mb: [2, 3],
         }}
