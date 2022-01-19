@@ -27,7 +27,7 @@ const About = ({ offset, factor = 1 }: { offset: number; factor?: number }) => (
         <Svg icon="arrowUp" hiddenMobile width={16} color="icon_purple" left="5%" top="80%" />
         <Svg icon="triangle" width={12} color="icon_brightest" left="95%" top="50%" />
         <Svg icon="circle" hiddenMobile width={6} color="icon_brightest" left="85%" top="15%" />
-        <img width="300" height="auto" src="/parrot-fish@2x.png" style={{position: "absolute", left: "30%", top: "90%"}} />
+        <img width="300" height="auto" src="/parrot-fish.png" alt="parrot fish floating in background" style={{position: "absolute", left: "30%", top: "90%"}} />
       </UpDownWide>
       <Svg icon="circle" hiddenMobile width={6} color="icon_brightest" left="4%" top="20%" />
       <Svg icon="circle" width={12} color="icon_darkest" left="70%" top="60%" />
