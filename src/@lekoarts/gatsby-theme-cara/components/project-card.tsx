@@ -34,7 +34,7 @@ const ProjectCard = ({ image, imageAlt, link, title, children, bg }: ProjectCard
     }}
   >
   
-    <img width="520px" height="232px" src={image} alt={imageAlt}
+    <img width="100%" height="auto" src={image} alt={imageAlt}
         sx={{
             mb: [2, 3],
         }}
