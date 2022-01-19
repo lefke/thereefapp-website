@@ -1,4 +1,6 @@
-require(`dotenv`).config()
+require(`dotenv`).config({
+  path: `.env.${process.env.NODE_ENV}`,
+})
 
 const shouldAnalyseBundle = process.env.ANALYSE_BUNDLE
 
@@ -62,7 +64,7 @@ module.exports = {
       options: {
         // You can add multiple tracking ids and a pageview event will be fired for all of them.
         trackingIds: [
-          "G-GHWRSVKNNL",
+          process.env.GATSBY_GTAG_ID,
             // Google Analytics / GA
           //"AW-CONVERSION_ID",
             // Google Ads / Adwords / AW
@@ -72,7 +74,7 @@ module.exports = {
         // This object gets passed directly to the gtag config command
         // This config will be shared across all trackingIds
         gtagConfig: {
-          optimize_id: "G-GHWRSVKNNL",
+          optimize_id: process.env.GATSBY_GTAG_ID,
           anonymize_ip: true,
           cookie_expires: 0,
         },
@@ -91,9 +93,9 @@ module.exports = {
       resolve: 'gatsby-plugin-web-font-loader',
       options: {
         typekit: {
-            id: 'qel2ulv'
-        }
-      }
-    }
+            id: process.env.GATSBY_TYPEKIT_ID,
+        },
+      },
+    },
   ].filter(Boolean),
 }
