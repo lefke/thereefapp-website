@@ -20,8 +20,8 @@ const ProjectCard = ({ image, link, title, children, bg }: ProjectCardProps) => 
       position: `relative`,
       textDecoration: `none`,
       borderRadius: `lg`,
-      px: 4,
-      py: [3, 4],
+      px: [2, 3, 4],
+      py: [2, 3, 4],
       color: `#1C0248`,
       background: bg || `none`,
       transition: `all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275) !important`,
@@ -35,20 +35,20 @@ const ProjectCard = ({ image, link, title, children, bg }: ProjectCardProps) => 
   
     <img width="100%" height="auto" src={image} 
         sx={{
-            mb: 3,
+            mb: [2, 3],
         }}
     />
     <div
       sx={{
-        pb: 3,
-        fontSize: [3, 4],
+        pb: [2, 3],
+        fontSize: [2, 2, 3, 3, 4, 4],
         fontWeight: `bold`,
         lineHeight: 1,
       }}
     >
       {title}
     </div>
-    <div sx={{ opacity: 0.85 }}>{children}</div>
+    <div sx={{ opacity: 0.85, fontSize: [0, 0, 1, 1, 2, 2], }}>{children}</div>
   </a>
 )
 

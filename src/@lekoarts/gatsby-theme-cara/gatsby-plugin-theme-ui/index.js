@@ -49,8 +49,9 @@ const theme = merge(tailwind, {
       },
     },
   },
-  breakpoints: [`400px`, `600px`, `900px`, `1200px`, `1600px`],
+  breakpoints: [ '320px',`400px`, `600px`, `900px`, `1200px`, `1600px`],
   footer: {
+    fontSize: [0, 0, 1],
     textAlign: `center`,
     color: `textMuted`,
     px: [2, 3],
@@ -78,17 +79,13 @@ const theme = merge(tailwind, {
       },
     },
     p: {
-      fontSize: [1, 2],
-      letterSpacing: `-0.003em`,
-      lineHeight: `body`,
+      fontSize: [0, 0, 1, 1, 2, 2],
       "--baseline-multiplier": 0.179,
       "--x-height-multiplier": 0.35,
       color: `text`,
     },
     li: {
-      fontSize: [1, 2],
-      letterSpacing: `-0.003em`,
-      lineHeight: `body`,
+      fontSize: [0, 0, 1, 1, 2, 2],
       "--baseline-multiplier": 0.179,
       "--x-height-multiplier": 0.35,
       color: `text`,
@@ -96,13 +93,13 @@ const theme = merge(tailwind, {
     blockquote: {
       marginLeft: 0,
       p: {
-        fontSize: [2, 3],
-        fontWeight: `medium`,
+        fontSize: [0, 1, 2, 3],
+        fontWeight: `normal`,
         color: `heading`,
       },
     },
     h1: {
-      fontSize: [6, 7, 8],
+      fontSize: [4, 5, 5, 6, 7, 8],
       mt: 2,
       mb: 3,
       textShadow: `rgba(255, 255, 255, 0.15) 0px 5px 35px`,
@@ -110,27 +107,27 @@ const theme = merge(tailwind, {
       color: `heading`,
     },
     h2: {
-      fontSize: [4, 5, 6],
+      fontSize: [3, 4, 4, 5, 6, 6],
       mt: 2,
       mb: 2,
       letterSpacing: `0em`,
       color: `heading`,
     },
     h3: {
-      fontSize: [3, 4, 5],
+      fontSize: [2, 3, 3, 4, 5, 5],
       mt: 3,
       color: `heading`,
     },
     h4: {
-      fontSize: [2, 3, 4],
+      fontSize: [1, 2, 2, 3, 4, 4],
       color: `heading`,
     },
     h5: {
-      fontSize: [1, 2, 3],
+      fontSize: [0, 1, 1, 2, 3, 3],
       color: `heading`,
     },
     h6: {
-      fontSize: 1,
+      fontSize: [0, 1],
       mb: 2,
       color: `heading`,
     },
@@ -142,6 +139,9 @@ const theme = merge(tailwind, {
   },
   buttons: {
     toggle: {
+      fontSize: [1, 1, 2],
+      textTransform: 'uppercase',
+      borderRadius: 'lg',
       color: `background`,
       border: `none`,
       backgroundColor: `text`,
@@ -155,9 +155,9 @@ const theme = merge(tailwind, {
   texts: {
     bigger: {
       p: {
-        fontSize: [2, 3, 4],
+        fontSize: [ 1, 1, 2, 2, 3, 4],
         marginTop: '1',
-        lineHeight: '1',
+        lineHeight: '1.2em',
       },
     },
   },
