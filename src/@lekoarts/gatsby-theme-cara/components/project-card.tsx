@@ -33,7 +33,7 @@ const ProjectCard = ({ image, link, title, children, bg }: ProjectCardProps) => 
     }}
   >
   
-    <img width="519px" height="auto" src={image} 
+    <img width="520px" height="232px" src={image} 
         sx={{
             mb: [2, 3],
         }}
