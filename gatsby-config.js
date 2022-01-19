@@ -62,7 +62,7 @@ module.exports = {
       options: {
         // You can add multiple tracking ids and a pageview event will be fired for all of them.
         trackingIds: [
-          "GA-292882495",
+          "G-GHWRSVKNNL",
             // Google Analytics / GA
           //"AW-CONVERSION_ID",
             // Google Ads / Adwords / AW
@@ -72,14 +72,14 @@ module.exports = {
         // This object gets passed directly to the gtag config command
         // This config will be shared across all trackingIds
         gtagConfig: {
-          optimize_id: "G-S4Q8W5YLTM",
+          optimize_id: "G-GHWRSVKNNL",
           anonymize_ip: true,
           cookie_expires: 0,
         },
         // This object is used for configuration specific to this plugin
         pluginConfig: {
           // Puts tracking script in the head instead of the body
-          head: false,
+          head: true,
           // Setting this parameter is also optional
           respectDNT: true,
           // Avoids sending pageview hits from custom paths
