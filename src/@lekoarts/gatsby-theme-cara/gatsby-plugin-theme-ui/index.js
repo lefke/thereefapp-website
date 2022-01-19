@@ -49,7 +49,7 @@ const theme = merge(tailwind, {
       },
     },
   },
-  breakpoints: [ '320px',`400px`, `600px`, `900px`, `1200px`, `1600px`],
+  breakpoints: [ '321px',`376px`, `668px`, `900px`, `1200px`, `1600px`],
   footer: {
     fontSize: [0, 0, 1],
     textAlign: `center`,
