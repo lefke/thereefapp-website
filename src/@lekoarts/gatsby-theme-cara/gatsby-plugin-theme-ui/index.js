@@ -22,7 +22,7 @@ const theme = merge(tailwind, {
     text: tailwind.colors.white,
     heading: '#FCD901',
     background: '#1C0248',
-    divider: '#FFA4CA',
+    divider: '#1C0248',
     textMuted: '#FF2D1D',
     icon_brightest: 'rgba(255, 255, 255, 0.04)',
     icon_darker:  'rgba(255, 255, 255, 0.08)',
