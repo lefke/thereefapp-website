@@ -16,7 +16,7 @@ const Footer = () => {
         type="button"
         aria-label="Toggle dark mode"
       >
-        {isDark ? `reef theme` : `deep sea theme`}
+        {isDark ? `reef theme` : `night dive theme`}
       </button>
       Copyright &copy; {new Date().getFullYear()}. All rights reserved.
       <br />
