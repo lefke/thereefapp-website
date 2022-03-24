@@ -9,9 +9,9 @@ import Footer from "./footer"
 // @ts-ignore
 import ContactMDX from "../sections/contact"
 
-const Contact = ({ offset, factor = 1 }: { offset: number; factor?: number }) => (
+const Contact = () => (
   <div>
-    <Divider fill="wave" speed={0.2} offset={offset} factor={factor}>
+    <Divider fill="wave">
       <div sx={{ position: `absolute`, bottom: 0, width: `full`, transform: `matrix(1, 0, 0, -1, 0, 0)` }}>
         <div
           sx={{
@@ -34,19 +34,7 @@ const Contact = ({ offset, factor = 1 }: { offset: number; factor?: number }) =>
         </div>
       </div>
     </Divider>
-    <Content speed={0.4} offset={offset} factor={factor}
-          sx={{
-            display: `flex`,
-            width: `100%`,
-            flexDirection: 'column',
-            justifyContent: 'flex-end',
-          }}>
-      <Inner>
-        <ContactMDX />
-      </Inner>
-      <Footer />
-    </Content>
-    <Divider speed={0.1} offset={offset} factor={factor}>
+    <Divider sx={{overflow: `hidden`}} >
       <UpDown>
         <Svg icon="upDown" stroke hiddenMobile width={8} color="icon_darkest" left="70%" top="20%" />
         <Svg icon="triangle" width={8} color="icon_darkest" left="25%" top="5%" />
@@ -61,6 +49,18 @@ const Contact = ({ offset, factor = 1 }: { offset: number; factor?: number }) =>
       <Svg icon="box" width={12} color="icon_darkest" left="20%" top="30%" />
       <Svg icon="hexa" width={8} color="icon_darkest" left="80%" top="70%" />
     </Divider>
+    <Content 
+          sx={{
+            display: `flex`,
+            width: `100%`,
+            flexDirection: 'column',
+            justifyContent: 'flex-end',
+          }}>
+      <Inner>
+        <ContactMDX />
+      </Inner>
+      <Footer />
+    </Content>
   </div>
 )
 

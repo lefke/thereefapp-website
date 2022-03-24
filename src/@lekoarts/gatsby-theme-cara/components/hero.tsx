@@ -8,9 +8,9 @@ import { UpDown, UpDownWide } from "../styles/animations"
 // @ts-ignore
 import Intro from "../sections/intro"
 
-const Hero = ({ offset, factor = 1 }: { offset: number; factor?: number }) => (
+const Hero = () => (
   <div>
-    <Divider speed={0.2} offset={offset} factor={factor}>
+    <Divider>
       <Svg icon="circle" hiddenMobile width={24} color="icon_darker" left="5%" top="70%" />
       <Svg icon="upDown" stroke hiddenMobile width={38} color="icon_darker" left="40%" top="80%" />
       <Svg icon="triangle" width={8} color="icon_darker" left="25%" top="5%" />
@@ -31,7 +31,7 @@ const Hero = ({ offset, factor = 1 }: { offset: number; factor?: number }) => (
         <Svg icon="box" width={6} color="icon_darker" left="60%" top="15%" />
       </UpDown>
     </Divider>
-    <Content sx={{ variant: `texts.bigger` }} speed={0.4} offset={offset} factor={factor}>
+    <Content sx={{ variant: `texts.bigger`, height: '100vh' }}>
       <Inner>
         <Intro />
       </Inner>

@@ -1,6 +1,6 @@
 import * as React from "react"
 import { Link } from "gatsby"
-import { Parallax } from "@react-spring/parallax"
+//import { Parallax } from "@react-spring/parallax"
 import { Themed } from "theme-ui"
 import Layout from "@lekoarts/gatsby-theme-cara/src/components/layout"
 import Divider from "@lekoarts/gatsby-theme-cara/src/elements/divider"
@@ -13,9 +13,8 @@ import Inner from "@lekoarts/gatsby-theme-cara/src/elements/inner"
 const NotFound = () => (
   <Layout>
     <Seo title="404 - Not Found" />
-    <Parallax pages={1}>
       <div>
-        <Divider speed={0.2} offset={0} factor={1}>
+        <Divider>
           <UpDown>
             <Svg icon="triangle" hiddenMobile width={48} stroke color="icon_orange" left="10%" top="20%" />
             <Svg icon="hexa" width={48} fill color="icon_yellow" left="60%" top="70%" />
@@ -43,7 +42,7 @@ const NotFound = () => (
           <Svg icon="hexa" width={16} stroke color="icon_darker" left="10%" top="50%" />
           <Svg icon="hexa" width={8} stroke color="icon_darker" left="80%" top="70%" />
         </Divider>
-        <Content sx={{ variant: `texts.bigger` }} speed={0.4} offset={0} factor={1}>
+        <Content sx={{ variant: `texts.bigger` }} >
           <Inner>
             <Themed.h1>404 - Page not found</Themed.h1>
             <Themed.p>
@@ -52,7 +51,6 @@ const NotFound = () => (
           </Inner>
         </Content>
       </div>
-    </Parallax>
   </Layout>
 )
 
