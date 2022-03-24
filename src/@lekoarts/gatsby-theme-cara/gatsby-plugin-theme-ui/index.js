@@ -6,6 +6,9 @@ const theme = merge(tailwind, {
   config: {
     useCustomProperties: true,
   },
+  main: {
+    overflowY: `hidden`,
+  },
   fonts: {
     body: 'nort, system-ui, sans-serif',
     heading: 'nort, "Avenir Next", sans-serif',
@@ -107,6 +110,7 @@ const theme = merge(tailwind, {
       textShadow: `rgba(255, 255, 255, 0.15) 0px 5px 35px`,
       letterSpacing: `0em`,
       color: `heading`,
+      textAlign: `center !important`,
     },
     h2: {
       fontSize: [3, 4, 4, 5, 6, 6],
@@ -143,7 +147,7 @@ const theme = merge(tailwind, {
     toggle: {
       fontSize: [1, 1, 2],
       textTransform: 'uppercase',
-      borderRadius: 'lg',
+      borderRadius: '40px',
       color: `background`,
       border: `none`,
       backgroundColor: `text`,
@@ -161,6 +165,23 @@ const theme = merge(tailwind, {
         marginTop: '1',
         lineHeight: '1.2em',
       },
+    },
+    smaller: {
+        p: {
+        fontSize: [ 0, 0, 1, 1, 2, 3],
+        marginTop: '1',
+        lineHeight: '1em',
+        },
+    },
+  },
+  headings: {
+    smaller: {
+        h1: {
+            fontSize: [1, 2, 2, 3, 4, 4],
+        },
+        h2: {
+            fontSize: [1, 2, 2, 3, 4, 4],
+        },
     },
   },
 })

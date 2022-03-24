@@ -50,6 +50,8 @@ export function UpDown({ children }: { children: React.ReactNode }) {
         left: 0;
         right: 0;
         bottom: 0;
+        overflow-x: clip;
+        z-index: -99;
       `}
     >
       {children}
@@ -67,6 +69,8 @@ export function UpDownWide({ children }: { children: React.ReactNode }) {
         left: 0;
         right: 0;
         bottom: 0;
+        overflow-x: clip;
+        z-index: -98;
       `}
     >
       {children}

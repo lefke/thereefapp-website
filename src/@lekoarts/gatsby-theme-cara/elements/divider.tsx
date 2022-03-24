@@ -5,6 +5,7 @@ import { jsx } from "theme-ui"
 type DividerProps = {
   children?: React.ReactNode
   bg?: string
+  bgImage?: string
   fill?: string
   clipPath?: string
   className?: string
@@ -12,6 +13,7 @@ type DividerProps = {
 
 const Divider = ({
   bg = ``,
+  bgImage = ``,
   fill = ``,
   clipPath = ``,
   children = null,
@@ -20,11 +22,12 @@ const Divider = ({
   <div
     sx={{
       position: `absolute`,
-      width: `full`,
-      height: `auto`,
-      minHeight: `100vh`,
+      alignSelf: `stretch`,
+      width: `100%`,
+      height: `100%`,
       background: bg,
       backgroundColor: bg,
+      backgroundImage: bgImage,
       zIndex: `-99`,
       "#contact-wave": {
         color: fill,

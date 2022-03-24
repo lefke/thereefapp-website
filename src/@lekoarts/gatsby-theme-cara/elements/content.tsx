@@ -15,7 +15,6 @@ const Content = ({ children, className = `` }: ContentProps) => (
       flexDirection: `column`,
       alignItems: `center`,
       justifyContent: `center`,
-      zIndex: 50,
       minHeight: `100vh`,
     }}
     className={className}
