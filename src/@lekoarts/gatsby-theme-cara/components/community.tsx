@@ -6,23 +6,23 @@ import Content from "../elements/content"
 import Svg from "./svg"
 import { UpDown, UpDownWide } from "../styles/animations"
 // @ts-ignore
-import ProjectsIntroMDX from "../sections/introProjects"
-import FeaturedProject from "../components/feature-project"
+import MapProjectsMDX from "../sections/mapProjects"
 import { withAssetPrefix } from "gatsby"
 
-const Projects = () => (
+const MapProjects = () => (
   <div style={{
     display: `flex`,
     flexDirection: `column`,
     alignItems: `stretch`,
     position: `relative`,
     }}
+    sx={{ mt: [`-100px`] }}
   >
         <Divider
         bg="#ffffff"
-        sx={{ height: `100%`, width: `100%`, clipPath: `polygon(0 0, 100% 0%, 100% 100%, 0 100%)` }}
+        sx={{ height: `100%`, width: `100%`, clipPath: `polygon(0 100px, 100% 0, 100% 100%, 0 100%)` }}
         />
-    <Content >
+    <Content sx= {{ mt: [`7rem`] }}>
         <UpDown>
             <Svg icon="triangle" width={8} color="icon_orange" left="25%" top="5%" />
             <Svg icon="circle" hiddenMobile width={24} color="icon_brightest" left="17%" top="60%" />
@@ -34,26 +34,22 @@ const Projects = () => (
             <img width="450" height="auto" src="/no-lotion.png"  alt="collage of sunscreen on coral crossed out" style={{position: "absolute", right: "0%", top: "54%"}} />
         </UpDownWide>
       <Inner>
-          <ProjectsIntroMDX />
+          <MapProjectsMDX />
             <button
                 sx={{ variant: `buttons.toggle`, fontSize: `[ 2, 2, 3, 3, 3, 4]`, fontWeight: `semibold`, display: `block`, mx: `auto`, mt: 3 }}
                 onClick={null}
                 type="button"
                 aria-label="Toggle dark mode"
             >
-                Apply for early access
+                Submit your project
             </button>
-            <h3>Featured project</h3>
-          <FeaturedProject />
-            <p sx={{ textAlign: `center` }}>Get your project featured</p>
       </Inner>
     </Content>
-
         <Divider
         bg="#ffffff"
-        sx={{ position: `initial`, justifySelf: `flex-end`, height: `100px`, width: `100%`, clipPath: `polygon(0 0, 100% 100%, 100% 100%)` }}
+        sx={{ position: `initial`, justifySelf: `flex-end`, height: `100px`, width: `100%`, clipPath: `polygon(0 100%, 100% 0%, 100% 100%)` }}
         />
   </div>
 )
 
-export default Projects
+export default MapProjects

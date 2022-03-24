@@ -10,7 +10,7 @@ import Intro from "../sections/intro"
 
 const Hero = () => (
   <div>
-    <Content sx={{ height: `100vh`, textAlign: `center` }} >
+    <Content sx={{ minHeight: `90vh`, textAlign: `center` }} >
       <UpDownWide>
         <img width="200" height="auto" src="/fish@2x.png" alt="fish floating in header" style={{position: "absolute", left: "-10%", top: "20%"}} />
       </UpDownWide>
@@ -30,6 +30,10 @@ const Hero = () => (
       </button>
       <p className="microCopy" sx={{ variant: `texts.smaller`}}>Get early access and help shape the community.</p>
     </Content>
+        <Divider
+        bg="#ffffff"
+        sx={{ position: `initial`, justifySelf: `flex-end`, height: `200px`, width: `100%`, clipPath: `polygon(0 0, 100% 50%, 100% 100%, 0 100%)`, zIndex: `-99`, mb: `-1px`}}
+        />
   </div>
 )
 

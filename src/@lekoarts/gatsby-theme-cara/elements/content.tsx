@@ -10,7 +10,7 @@ type ContentProps = {
 const Content = ({ children, className = `` }: ContentProps) => (
   <div
     sx={{
-      padding: [3, 4, 4, 5],
+      padding: [2, 3, 3, 4],
       display: `flex`,
       flexDirection: `column`,
       alignItems: `center`,
