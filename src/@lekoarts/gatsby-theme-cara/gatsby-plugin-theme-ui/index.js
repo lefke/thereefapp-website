@@ -174,6 +174,13 @@ const theme = merge(tailwind, {
         },
     },
   },
+  p: {
+    microCopy: {
+        p: {
+            fontSize: [0, 0, 0, 0, 1, 1]
+        },
+    },
+  },
   headings: {
     smaller: {
         h1: {

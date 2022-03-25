@@ -18,19 +18,13 @@ const MapProjects = () => (
     }}
     sx={{ mt: [`-100px`] }}
   >
-        <Divider
-        bg="icon_yellow"
-        sx={{ height: `100%`, width: `100%`, clipPath: `polygon(0 0, 100% 100px, 100% 100%, 0 100%)` }}
-        />
-    <Content sx= {{ mt: [`7rem`] }}>
-        <UpDown>
-            <Svg icon="triangle" width={8} color="icon_orange" left="25%" top="5%" />
-            <Svg icon="circle" hiddenMobile width={24} color="icon_brightest" left="17%" top="60%" />
-        </UpDown>
+    <Divider
+    bg="icon_yellow"
+    sx={{ height: `100%`, width: `100%`, clipPath: `polygon(0 0, 100% 100px, 100% 100%, 0 100%)` }}
+    />
+    <Content sx= {{ minHeight: "70vh", mt: [`4rem`] }}>
+        <img width="60%" height="auto" src="/platform-project@2x.png" alt="fish floating in header" style={{position: "absolute", left: "10%", top: "0%", maxWidth: "700px" }} />
         <UpDownWide>
-            <Svg icon="hexa" width={148} color="icon_yellow" left="46%" top="10%" />
-            <Svg icon="circle" width={6} color="icon_brightest" left="75%" top="10%" />
-            <Svg icon="hexa" width={12} color="icon_yellow" left="80%" top="70%" />
             <img width="450" height="auto" src="/no-lotion.png"  alt="collage of sunscreen on coral crossed out" style={{position: "absolute", right: "0%", top: "54%"}} />
         </UpDownWide>
       <Inner>
@@ -45,10 +39,10 @@ const MapProjects = () => (
             </button>
       </Inner>
     </Content>
-        <Divider
-        bg="#ffffff"
-        sx={{ position: `initial`, justifySelf: `flex-end`, height: `100px`, width: `100%`, clipPath: `polygon(0 100%, 100% 0%, 100% 100%)` }}
-        />
+    <Divider
+    bg="#ffffff"
+    sx={{ position: `initial`, justifySelf: `flex-end`, height: `100px`, width: `100%`, clipPath: `polygon(0 100%, 100% 0%, 100% 100%)` }}
+    />
   </div>
 )
 

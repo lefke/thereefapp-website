@@ -20,10 +20,10 @@ const Mission = () => (
   >
         <Divider
         bg="#ffffff"
-        sx={{ height: `100%`, width: `100%`, clipPath: `polygon(0 0%, 100% 100px, 100% 100%, 0 100%)`, }}
+        sx={{ height: `100%`, width: `100%`, }}
         />
     <Content 
-        sx={{ justifyContent: `flex-start`, minHeight: [`75vh`, `55vh`], }}
+        sx={{ justifyContent: `flex-start`, minHeight: [`20vh`, `20vh`], }}
     
     >
       <Inner>
@@ -38,9 +38,19 @@ const Mission = () => (
           <MissionMDX/>
         </div>
       </Inner>
-        <img width="35%" height="auto" src="/no-lotion.png"  alt="collage of sunscreen on coral crossed out" style={{position: "relative", left: "0%", top: "54%", zIndex: "-99"}} />
-        <img width="35%" height="auto" src="/no-lotion.png"  alt="collage of sunscreen on coral crossed out" style={{position: "relative", left: "0%", top: "54%", zIndex: "-99"}} />
     </Content>
+      <div 
+        sx={{
+        display: `grid`,
+        gridGap: [1, 1, 2, 2],
+        gridTemplateColumns: [`1fr`, `1fr`, `1fr`, `repeat(2, 1fr)`],
+        h2: { gridColumn: `-1/1` },
+        mt: `-50px`, 
+        }}
+      >
+        <img width="70%" height="auto" src="/indonesia_warren@2x.png"  alt="collage of sunscreen on coral crossed out" style={{ zIndex: "-99"}} />
+        <img width="80%" height="auto" src="/join-the-movement@2x.png"  alt="collage of sunscreen on coral crossed out" style={{ alignSelf: "flex-end", justifySelf: "flex-end", zIndex: "-99"}} />
+      </div>
   </div>
 )
 

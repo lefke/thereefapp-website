@@ -12,10 +12,10 @@ const Hero = () => (
   <div>
     <Content sx={{ minHeight: `90vh`, textAlign: `center` }} >
       <UpDownWide>
-        <img width="200" height="auto" src="/fish@2x.png" alt="fish floating in header" style={{position: "absolute", left: "-10%", top: "20%"}} />
+        <img width="30%" height="auto" src="/nudibranch-cutout@2x.png" alt="fish floating in header" style={{position: "absolute", left: "-5%", top: "20%", maxWidth: "200px" }} />
       </UpDownWide>
       <UpDown>
-        <img width="400" height="auto" src="/fish@2x.png" alt="fish floating in header" style={{position: "absolute", left: "60%", top: "70%"}} />
+        <img width="35%" height="auto" src="/fish@2x.png" alt="fish floating in header" style={{position: "absolute", left: "60%", top: "70%", maxWidth: "400px" }} />
       </UpDown>
       <Inner sx={{ variant: `texts.bigger`, textAlign: `center` }}>
         <Intro />

@@ -23,16 +23,6 @@ const Projects = () => (
         sx={{ height: `100%`, width: `100%`, clipPath: `polygon(0 0, 100% 0%, 100% 100%, 0 100%)` }}
         />
     <Content >
-        <UpDown>
-            <Svg icon="triangle" width={8} color="icon_orange" left="25%" top="5%" />
-            <Svg icon="circle" hiddenMobile width={24} color="icon_brightest" left="17%" top="60%" />
-        </UpDown>
-        <UpDownWide>
-            <Svg icon="hexa" width={148} color="icon_yellow" left="46%" top="10%" />
-            <Svg icon="circle" width={6} color="icon_brightest" left="75%" top="10%" />
-            <Svg icon="hexa" width={12} color="icon_yellow" left="80%" top="70%" />
-            <img width="450" height="auto" src="/no-lotion.png"  alt="collage of sunscreen on coral crossed out" style={{position: "absolute", right: "0%", top: "54%"}} />
-        </UpDownWide>
       <Inner>
           <ProjectsIntroMDX />
             <button
@@ -43,8 +33,21 @@ const Projects = () => (
             >
                 Apply for early access
             </button>
-            <h3>Featured project</h3>
-          <FeaturedProject />
+            <div>
+                <img width="40%" height="auto" src="/parrot-fish@2x.png"  alt="collage of sunscreen on coral crossed out" style={{ maxWidth: "400px", zIndex: "-99", position: "relative", left: "-10%", top: "14%", margin: "30px 0 -85px"}} />
+                <div
+                    sx={{
+                        bg: "#ffffff",
+                        py: [1,1,1,1],
+                        px: [3,3,3,3],
+                        borderRadius: "lg",
+                        boxShadow: `lg`,
+                    }}
+                >
+                    <h3>Featured project</h3>
+                    <FeaturedProject />
+                </div>
+            </div>
             <p sx={{ textAlign: `center` }}>Get your project featured</p>
       </Inner>
     </Content>
