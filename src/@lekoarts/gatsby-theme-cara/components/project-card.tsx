@@ -42,14 +42,14 @@ const ProjectCard = ({ image, imageAlt, link, title, children, bg }: ProjectCard
     <div
       sx={{
         pb: [2, 3],
-        fontSize: [1, 2, 2, 3, 4, 4],
+        fontSize: [1, 2, 2, 2, 2, 2],
         fontWeight: `bold`,
         lineHeight: 1,
       }}
     >
       {title}
     </div>
-    <div sx={{ opacity: 0.85, fontSize: [0, 0, 0, 1, 1, 2], }}>{children}</div>
+    <div sx={{ opacity: 0.85, fontSize: [0, 0, 0, 1, 1, 1], }}>{children}</div>
   </a>
 )
 

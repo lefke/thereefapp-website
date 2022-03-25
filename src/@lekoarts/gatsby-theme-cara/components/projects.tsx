@@ -16,13 +16,16 @@ const Projects = () => (
     flexDirection: `column`,
     alignItems: `stretch`,
     position: `relative`,
+    marginBottom: `-1px`,
     }}
   >
         <Divider
         bg="#ffffff"
         sx={{ height: `100%`, width: `100%`, clipPath: `polygon(0 0, 100% 0%, 100% 100%, 0 100%)` }}
         />
-    <Content >
+    <Content
+        sx={{ justifyContent: `flex-start`, minHeight: [`25vh`, `25vh`], }}
+    >
       <Inner>
           <ProjectsIntroMDX />
             <button
@@ -34,7 +37,7 @@ const Projects = () => (
                 Apply for early access
             </button>
             <div>
-                <img width="40%" height="auto" src="/parrot-fish@2x.png"  alt="collage of sunscreen on coral crossed out" style={{ maxWidth: "400px", zIndex: "-99", position: "relative", left: "-10%", top: "14%", margin: "30px 0 -85px"}} />
+                <img width="40%" height="auto" src="/parrot-fish@2x.png"  alt="parrot fish cutout" style={{ maxWidth: "380px", zIndex: "-99", position: "relative", left: "-20%", top: "14%", margin: "30px 0 -10%"}} />
                 <div
                     sx={{
                         bg: "#ffffff",
@@ -44,18 +47,13 @@ const Projects = () => (
                         boxShadow: `lg`,
                     }}
                 >
-                    <h3>Featured project</h3>
+                    <h3>Featured projects</h3>
                     <FeaturedProject />
                 </div>
             </div>
             <p sx={{ textAlign: `center` }}>Get your project featured</p>
       </Inner>
     </Content>
-
-        <Divider
-        bg="#ffffff"
-        sx={{ position: `initial`, justifySelf: `flex-end`, height: `100px`, width: `100%`, clipPath: `polygon(0 0, 100% 100%, 100% 100%)` }}
-        />
   </div>
 )
 

@@ -22,23 +22,6 @@ const Mission = () => (
         bg="#ffffff"
         sx={{ height: `100%`, width: `100%`, }}
         />
-    <Content 
-        sx={{ justifyContent: `flex-start`, minHeight: [`20vh`, `20vh`], }}
-    
-    >
-      <Inner>
-        <div
-          sx={{
-            variant: `headings.smaller`,
-            zIndex: "99",
-            textAlign: `center`,
-            mt: [`4rem`],
-          }}
-        >
-          <MissionMDX/>
-        </div>
-      </Inner>
-    </Content>
       <div 
         sx={{
         display: `grid`,
@@ -48,9 +31,30 @@ const Mission = () => (
         mt: `-50px`, 
         }}
       >
-        <img width="70%" height="auto" src="/indonesia_warren@2x.png"  alt="collage of sunscreen on coral crossed out" style={{ zIndex: "-99"}} />
-        <img width="80%" height="auto" src="/join-the-movement@2x.png"  alt="collage of sunscreen on coral crossed out" style={{ alignSelf: "flex-end", justifySelf: "flex-end", zIndex: "-99"}} />
+        <img width="50%" height="auto" src="/indonesia_warren@2x.png"  alt="collage of sunscreen on coral crossed out" style={{ zIndex: "-99", maxWidth: '340px' }} />
+        <img width="60%" height="auto" src="/join-the-movement@2x.png"  alt="collage of sunscreen on coral crossed out" style={{ alignSelf: "flex-end", justifySelf: "flex-end", zIndex: "-99", maxWidth: '440px' }} />
       </div>
+    <Content
+        sx={{ justifyContent: `flex-start`, minHeight: [`25vh`, `25vh`], mb: `100px` }}
+    >
+      <Inner>
+        <div
+          sx={{
+            variant: `headings.smaller`,
+            zIndex: "99",
+            textAlign: `center`,
+            mb: [`4rem`],
+          }}
+        >
+          <MissionMDX/>
+        </div>
+      </Inner>
+    </Content>
+
+        <Divider
+        bg="#ffffff"
+        sx={{ position: `initial`, justifySelf: `flex-end`, height: `100px`, width: `100%`, clipPath: `polygon(0 0, 100% 100%, 100% 100%)` }}
+        />
   </div>
 )
 

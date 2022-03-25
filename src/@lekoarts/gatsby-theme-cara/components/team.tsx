@@ -6,10 +6,10 @@ import Content from "../elements/content"
 import Svg from "./svg"
 import { UpDown, UpDownWide } from "../styles/animations"
 // @ts-ignore
-import CommunityMDX from "../sections/community"
+import TeamMDX from "../sections/team"
 import { withAssetPrefix } from "gatsby"
 
-const MapProjects = () => (
+const Team = () => (
   <div style={{
     display: `flex`,
     flexDirection: `column`,
@@ -20,25 +20,17 @@ const MapProjects = () => (
   >
         <Divider
         bg="#ffffff"
-        sx={{ height: `100%`, width: `100%`, clipPath: `polygon(0 100px, 100% 0, 100% 100%, 0 100%)` }}
+        sx={{ height: `100%`, width: `100%`, clipPath: `polygon(0 0, 100% 100px, 100% 100%, 0 100%)` }}
         />
     <Content sx= {{ minHeight: `65vh`, mt: [`200px`] }}>
         <UpDown>
         </UpDown>
         <UpDownWide>
         </UpDownWide>
-        <img width="55%" height="auto" src="/people-bubbles@2x.png"  alt="divers working on frame" style={{position: "absolute", left: "0%", top: "84%", maxWidth: "600px"}} />
       <Inner>
-          <CommunityMDX />
-            <button
-                sx={{ variant: `buttons.toggle`, fontSize: `[ 2, 2, 3, 3, 3, 4]`, fontWeight: `semibold`, display: `block`, mx: `auto`, mt: 3 }}
-                onClick={null}
-                type="button"
-                aria-label="Toggle dark mode"
-            >
-                Apply for early access
-            </button>
-            <p sx={{ variant: `p.microCopy.p`}}>Get early access and help shape the community.</p>
+          <TeamMDX />
+          <img width="350" height="auto" src="/people-bubbles@2x.png"  alt="divers working on frame" style={{}} />
+
       </Inner>
     </Content>
         <Divider
@@ -48,4 +40,4 @@ const MapProjects = () => (
   </div>
 )
 
-export default MapProjects
+export default Team

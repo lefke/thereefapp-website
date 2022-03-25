@@ -22,11 +22,10 @@ const MapProjects = () => (
     bg="icon_yellow"
     sx={{ height: `100%`, width: `100%`, clipPath: `polygon(0 0, 100% 100px, 100% 100%, 0 100%)` }}
     />
-    <Content sx= {{ minHeight: "70vh", mt: [`4rem`] }}>
-        <img width="60%" height="auto" src="/platform-project@2x.png" alt="fish floating in header" style={{position: "absolute", left: "10%", top: "0%", maxWidth: "700px" }} />
+    <Content sx={{ minHeight: "70vh", mt: [`100px`, `200px`, `300px`, `300px`] }}>
+        <img width="60%" height="auto" src="/platform-project@2x.png" alt="coral restoration underwater platform" style={{marginTop: '-70px', position: "absolute", left: "10%", top: "0%", maxWidth: "700px" }} />
         <UpDownWide>
-            <img width="450" height="auto" src="/no-lotion.png"  alt="collage of sunscreen on coral crossed out" style={{position: "absolute", right: "0%", top: "54%"}} />
-        </UpDownWide>
+            <img width="350" height="auto" src="/shoal-collage@2x.png"  alt="collage of shoal of fish" style={{position: "absolute", right: "0%", top: "54%"}} />        </UpDownWide>
       <Inner>
           <MapProjectsMDX />
             <button

@@ -36,18 +36,11 @@ const Contact = () => (
     </Divider>
     <Divider sx={{overflow: `hidden`}} >
       <UpDown>
-        <Svg icon="upDown" stroke hiddenMobile width={8} color="icon_darkest" left="70%" top="20%" />
-        <Svg icon="triangle" width={8} color="icon_darkest" left="25%" top="5%" />
+        <img width="30%" height="auto" src="/angel-fish@2x.png"  alt="angel fish cutout" style={{position: "absolute", left: "0%", top: "4%", maxWidth: "280px" }} />
       </UpDown>
       <UpDownWide>
-        <Svg icon="triangle" width={12} color="icon_brightest" left="95%" top="50%" />
-        <Svg icon="circle" width={6} color="icon_brightest" left="85%" top="15%" />
-        <Svg icon="upDown" stroke hiddenMobile width={8} color="icon_darkest" left="45%" top="10%" />
+        <img width="80%" height="auto" src="/lips@2x.png"  alt="lips cutout" style={{position: "absolute", right: "0%", top: "60%", maxWidth: "320px" }} />
       </UpDownWide>
-      <Svg icon="circle" width={6} color="icon_brightest" left="4%" top="20%" />
-      <Svg icon="circle" width={12} color="icon_darkest" left="70%" top="60%" />
-      <Svg icon="box" width={12} color="icon_darkest" left="20%" top="30%" />
-      <Svg icon="hexa" width={8} color="icon_darkest" left="80%" top="70%" />
     </Divider>
     <Content 
           sx={{

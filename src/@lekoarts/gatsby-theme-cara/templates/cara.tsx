@@ -6,18 +6,20 @@ import Mission from "../components/mission"
 import Projects from "../components/projects"
 import MapProjects from "../components/map-projects"
 import Community from "../components/community"
-import About from "../components/about"
+import People from "../components/people"
+import Team from "../components/team"
 import Contact from "../components/contact"
 
 const Cara = () => (
   <Layout>
     <div  >
       <Hero  />
-      <Mission />
       <Projects />
+      <Mission />
       <MapProjects />
       <Community />
-      <About />
+      <People />
+      <Team />
       <Contact />
     </div>
   </Layout>
