@@ -31,7 +31,7 @@ const MapProjects = () => (
       <Inner>
           <CommunityMDX />
             <button
-                sx={{ variant: `buttons.toggle`, fontSize: `[ 2, 2, 3, 3, 3, 4]`, fontWeight: `semibold`, display: `block`, mx: `auto`, mt: 3 }}
+                sx={{ variant: `buttons.toggle`, mt: 3 }}
                 onClick={null}
                 type="button"
                 aria-label="Toggle dark mode"

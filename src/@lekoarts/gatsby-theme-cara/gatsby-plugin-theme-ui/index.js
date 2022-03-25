@@ -145,7 +145,10 @@ const theme = merge(tailwind, {
   },
   buttons: {
     toggle: {
-      fontSize: [1, 1, 2],
+      display: `block`, 
+      mx: `auto`,
+      fontSize: [ 1, 1, 1, 2, 2, 2],
+      fontWeight: `semibold`,
       textTransform: 'uppercase',
       borderRadius: '40px',
       color: `background`,
@@ -155,7 +158,6 @@ const theme = merge(tailwind, {
       alignSelf: `center`,
       px: 3,
       py: 2,
-      ml: 3,
     },
   },
   texts: {

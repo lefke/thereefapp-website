@@ -31,6 +31,11 @@ const Contact = () => (
               />
             </path>
           </svg>
+
+            <Divider
+            bg="#ffffff"
+            sx={{  height: `200px`, width: `100%`, clipPath: `polygon(0 0, 100% 0, 100% 100%, 0 100%)` }}
+            />
         </div>
       </div>
     </Divider>
@@ -48,12 +53,28 @@ const Contact = () => (
             width: `100%`,
             flexDirection: 'column',
             justifyContent: 'flex-end',
+            alignItems: `center`,
           }}>
-      <Inner>
+      <Inner
+          sx={{
+            display: `flex`,
+            width: `100%`,
+            flexDirection: 'column',
+            justifyContent: 'flex-end',
+            alignItems: `center`,
+            mb: `100px`,
+          }}>
         <ContactMDX />
       </Inner>
-      <Footer />
+      <Footer 
+          sx={{
+            display: `flex`,
+            width: `100%`,
+            flexDirection: 'column',
+            justifyContent: 'center',
+          }}/>
     </Content>
+
   </div>
 )
 

@@ -29,7 +29,6 @@ const People = () => (
       </UpDown>
       <UpDownWide>
       </UpDownWide>
-      <Svg icon="hexa" width={8} color="icon_darkest" left="80%" top="70%" />
     </Divider>
     <Content sx={{ minHeight: "70vh", pt: [`100px`, `200px`, `300px`, `300px`]}}>
       <Inner>
