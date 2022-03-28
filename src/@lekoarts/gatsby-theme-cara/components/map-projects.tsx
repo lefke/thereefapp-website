@@ -29,7 +29,7 @@ const MapProjects = () => (
       <Inner>
           <MapProjectsMDX />
             <button
-                sx={{ variant: `buttons.toggle`, mt: 3 }}
+                sx={{ variant: `buttons.toggle`, ml: `0`, mt: 3 }}
                 onClick={null}
                 type="button"
                 aria-label="Toggle dark mode"

@@ -19,10 +19,11 @@ const Projects = () => (
     marginBottom: `-1px`,
     }}
   >
-        <Divider
-        bg="#ffffff"
-        sx={{ height: `100%`, width: `100%`, clipPath: `polygon(0 0, 100% 0%, 100% 100%, 0 100%)` }}
-        />
+    <div id="section_projects"></div>
+    <Divider
+    bg="#ffffff"
+    sx={{ height: `100%`, width: `100%`, clipPath: `polygon(0 0, 100% 0%, 100% 100%, 0 100%)` }}
+    />
     <Content
         sx={{ justifyContent: `flex-start`, minHeight: [`25vh`, `25vh`], }}
     >

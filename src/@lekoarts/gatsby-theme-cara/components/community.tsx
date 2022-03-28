@@ -18,10 +18,11 @@ const MapProjects = () => (
     }}
     sx={{ mt: [`-100px`] }}
   >
-        <Divider
-        bg="#ffffff"
-        sx={{ height: `100%`, width: `100%`, clipPath: `polygon(0 100px, 100% 0, 100% 100%, 0 100%)` }}
-        />
+    <div id="section_people"></div>
+    <Divider
+    bg="#ffffff"
+    sx={{ height: `100%`, width: `100%`, clipPath: `polygon(0 100px, 100% 0, 100% 100%, 0 100%)` }}
+    />
     <Content sx= {{ minHeight: `65vh`, mt: [`200px`] }}>
         <UpDown>
         </UpDown>
@@ -31,7 +32,7 @@ const MapProjects = () => (
       <Inner>
           <CommunityMDX />
             <button
-                sx={{ variant: `buttons.toggle`, mt: 3 }}
+                sx={{ variant: `buttons.toggle`, ml: `0`, mt: 3 }}
                 onClick={null}
                 type="button"
                 aria-label="Toggle dark mode"

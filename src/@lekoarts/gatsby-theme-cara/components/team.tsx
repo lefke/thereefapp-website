@@ -18,10 +18,11 @@ const Team = () => (
     }}
     sx={{ mt: [`-100px`] }}
   >
-        <Divider
-        bg="#ffffff"
-        sx={{ height: `100%`, width: `100%`, clipPath: `polygon(0 0, 100% 100px, 100% 100%, 0 100%)` }}
-        />
+    <div id="section_team"></div>
+    <Divider
+    bg="#ffffff"
+    sx={{ height: `100%`, width: `100%`, clipPath: `polygon(0 0, 100% 100px, 100% 100%, 0 100%)` }}
+    />
     <Content sx= {{ minHeight: `65vh`, mt: [`200px`] }}>
         <UpDown>
         </UpDown>

@@ -1,5 +1,6 @@
 /** @jsx jsx */
-import { Box, Flex, Link, useColorMode, jsx } from "theme-ui"
+import { Box, Grid, Link, useColorMode, jsx } from "theme-ui"
+import { AnchorLink } from 'gatsby-plugin-anchor-links'
 
 const Footer = () => {
   const [colorMode, setColorMode] = useColorMode()
@@ -10,32 +11,23 @@ const Footer = () => {
 
   return (
     <Box as="footer" variant="footer">
+      <Grid  gap={2} columns={[4]}>
+        <AnchorLink to="/#section_projects">projects</AnchorLink>
+        <AnchorLink to="/#section_people">people</AnchorLink>
+        <AnchorLink to="/#section_team">the team</AnchorLink>
+        <AnchorLink to="/#section_contact">contact</AnchorLink>
+        {/*<AnchorLink to="/blog">blog</AnchorLink> */}
+      </Grid>
+
       <button
-        sx={{ variant: `buttons.toggle`, mb: 3 }}
-        onClick={toggleColorMode}
+        sx={{ variant: `buttons.toggle`, mt: 3 }}
+        onClick={null}
         type="button"
         aria-label="Toggle dark mode"
       >
-        {isDark ? `reef theme` : `night dive theme`}
+        Apply for early access
       </button>
-      Copyright &copy; {new Date().getFullYear()}. All rights reserved.
-      <br />
-      <Flex
-        sx={{
-          justifyContent: `center`,
-          alignItems: `center`,
-          mt: 3,
-          color: `text`,
-          fontWeight: `semibold`,
-          a: { color: `text` },
-        }}
-      >
-        {isDark ? (
-          <img width="60" height="60" src="/icon-logo-dark.png" alt="The Reef App Logo" />
-        ) : (
-          <img width="60" height="60" src="/icon-logo-dark.png" alt="The Reef App Logo" />
-        )}
-      </Flex>
+      <p>Copyright &copy; {new Date().getFullYear()}. All rights reserved.</p>
     </Box>
   )
 }

@@ -1,5 +1,5 @@
 /** @jsx jsx */
-import { jsx } from "theme-ui"
+import { Flex, useColorMode, jsx } from "theme-ui"
 import Divider from "../elements/divider"
 import Inner from "../elements/inner"
 import Content from "../elements/content"
@@ -9,8 +9,17 @@ import Footer from "./footer"
 // @ts-ignore
 import ContactMDX from "../sections/contact"
 
-const Contact = () => (
-  <div>
+const Contact = () => {
+
+  const [colorMode, setColorMode] = useColorMode()
+  const isDark = colorMode === `dark`
+  const toggleColorMode = (e: any) => {
+    setColorMode(isDark ? `light` : `dark`)
+    }
+
+  return (
+
+  <div id="section_contact">
     <Divider fill="wave">
       <div sx={{ position: `absolute`, bottom: 0, width: `full`, transform: `matrix(1, 0, 0, -1, 0, 0)` }}>
         <div
@@ -32,10 +41,6 @@ const Contact = () => (
             </path>
           </svg>
 
-            <Divider
-            bg="#ffffff"
-            sx={{  height: `200px`, width: `100%`, clipPath: `polygon(0 0, 100% 0, 100% 100%, 0 100%)` }}
-            />
         </div>
       </div>
     </Divider>
@@ -65,17 +70,37 @@ const Contact = () => (
             mb: `100px`,
           }}>
         <ContactMDX />
+        <Flex
+            sx={{
+            justifyContent: `center`,
+            alignItems: `center`,
+            mt: 3,
+            color: `text`,
+            fontWeight: `semibold`,
+            a: { color: `text` },
+            }}
+        >
+            {isDark ? (
+            <img width="50%" height="auto" src="/The reef app long logo - yellow-darktheme@2x.png" alt="The Reef App Logo" />
+            ) : (
+            <img width="50%" height="auto" src="/The reef app long logo - yellow@2x.png" alt="The Reef App Logo" />
+            )}
+      </Flex>
+
+      <button
+        sx={{ variant: `buttons.toggle`, mb: 3 }}
+        onClick={toggleColorMode}
+        type="button"
+        aria-label="Toggle dark mode"
+      >
+        {isDark ? `reef dive` : `night dive`}
+      </button>
       </Inner>
-      <Footer 
-          sx={{
-            display: `flex`,
-            width: `100%`,
-            flexDirection: 'column',
-            justifyContent: 'center',
-          }}/>
+      <Footer/>
     </Content>
 
   </div>
 )
+}
 
 export default Contact

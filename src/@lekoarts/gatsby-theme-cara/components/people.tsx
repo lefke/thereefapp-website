@@ -26,6 +26,7 @@ const People = () => (
     />
     <Divider >
       <UpDown>
+          <img width="80%" height="auto" src="/no-lotion.png"  alt="collage of sunscreen on coral crossed out" style={{position: "absolute", right: "0%", top: "24%", maxWidth: "320px" }} />
       </UpDown>
       <UpDownWide>
       </UpDownWide>
@@ -36,11 +37,10 @@ const People = () => (
         <AdvisorsMDX />
       </Inner>
     </Content>
-        <img width="80%" height="auto" src="/no-lotion.png"  alt="collage of sunscreen on coral crossed out" style={{position: "absolute", right: "0%", top: "24%", maxWidth: "320px" }} />
-        <Divider
-        bg="icon_yellow"
-        sx={{ position: `initial`, justifySelf: `flex-end`, height: `100px`, width: `100%`, clipPath: `polygon(0 100%, 100% 0%, 100% 100%)` }}
-        />
+      <Divider
+      bg="icon_yellow"
+      sx={{ position: `initial`, justifySelf: `flex-end`, height: `100px`, width: `100%`, clipPath: `polygon(0 100%, 100% 0%, 100% 100%)` }}
+      />
   </div>
 )
 
