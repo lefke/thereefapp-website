@@ -12,7 +12,7 @@ import Contact from "../components/contact"
 
 const Cara = () => (
   <Layout>
-    <div  >
+    <div>
       <Hero  />
       <Projects />
       <Mission />

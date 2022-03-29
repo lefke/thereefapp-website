@@ -17,6 +17,16 @@ module.exports = {
     siteLanguage: `en`,
     siteImage: `/rich-link-image.png`,
     author: `@thereefapp`,
+    menuLinks:[
+      {
+        name:'home',
+        link:'/'
+      },
+      {
+        name:'people',
+        link:'#section_people'
+      }
+    ]
   },
   plugins: [
     {
@@ -100,7 +110,7 @@ module.exports = {
     {
       resolve: "gatsby-plugin-anchor-links",
       options: {
-        offset: -100
+        offset: 100
       }
     },
   ].filter(Boolean),

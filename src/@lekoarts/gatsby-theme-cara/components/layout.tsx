@@ -1,11 +1,30 @@
 import * as React from "react"
-import { get } from "theme-ui"
+import { get, jsx } from "theme-ui"
 import { Global } from "@emotion/react"
-import SEO from "@lekoarts/gatsby-theme-cara/src/components/seo"
+import SEO from "./seo"
+import Header from "./header"
+import { graphql, StaticQuery } from "gatsby"
+
 
 type LayoutProps = { children: React.ReactNode; className?: string }
 
 const Layout = ({ children, className = `` }: LayoutProps) => (
+
+  <StaticQuery
+    query={graphql`
+      query SiteTitleQuery {
+        site {
+          siteMetadata {
+            title
+            menuLinks {
+              name
+              link
+            }
+          }
+        }
+      }
+    `}
+    render={data => (
   <React.Fragment>
     <Global
       styles={(t) => ({
@@ -39,8 +58,12 @@ const Layout = ({ children, className = `` }: LayoutProps) => (
       })}
     />
     <SEO />
+    <Header  menuLinks={data.site.siteMetadata.menuLinks} siteTitle={data.site.siteMetadata.title} />
     <main className={className}>{children}</main>
   </React.Fragment>
+    )}
+  />
 )
+
 
 export default Layout
