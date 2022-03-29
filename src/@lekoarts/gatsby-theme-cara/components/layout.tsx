@@ -3,6 +3,7 @@ import { get, jsx } from "theme-ui"
 import { Global } from "@emotion/react"
 import SEO from "./seo"
 import Header from "./header"
+import Footer from "./footer"
 import { graphql, StaticQuery } from "gatsby"
 
 
@@ -59,7 +60,10 @@ const Layout = ({ children, className = `` }: LayoutProps) => (
     />
     <SEO />
     <Header  menuLinks={data.site.siteMetadata.menuLinks} siteTitle={data.site.siteMetadata.title} />
-    <main className={className}>{children}</main>
+    <main className={className}>
+      {children}
+      <Footer  menuLinks={data.site.siteMetadata.menuLinks} siteTitle={data.site.siteMetadata.title} />
+    </main>
   </React.Fragment>
     )}
   />

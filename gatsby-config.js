@@ -25,7 +25,19 @@ module.exports = {
       {
         name:'people',
         link:'#section_people'
-      }
+      },
+      {
+        name:'people',
+        link:'#section_people'
+      },
+      {
+        name:'people',
+        link:'#section_people'
+      },
+      {
+        name:'people',
+        link:'#section_people'
+      },
     ]
   },
   plugins: [

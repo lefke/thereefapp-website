@@ -59,7 +59,6 @@ const theme = merge(tailwind, {
     fontSize: [0, 0, 1],
     textAlign: `center`,
     color: `textMuted`,
-    px: [2, 3],
     pt: [4, 5],
     pb: [0, 0],
   },
