@@ -2,10 +2,8 @@
 import { Flex, useColorMode, jsx } from "theme-ui"
 import Divider from "../elements/divider"
 import { Link } from "gatsby"
-import { AnchorLink } from 'gatsby-plugin-anchor-links'
 import PropTypes from "prop-types"
-import Svg from "./svg"
-import { UpDown, UpDownWide, waveAnimation } from "../styles/animations"
+import { UpDownWide, waveAnimation } from "../styles/animations"
 
 const Footer = ({ siteTitle, menuLinks }) => {
   const [colorMode, setColorMode] = useColorMode()
@@ -45,25 +43,25 @@ const Footer = ({ siteTitle, menuLinks }) => {
           <img width="80%" height="auto" src="/lips@2x.png"  alt="lips cutout" style={{position: "absolute", right: "0%", bottom: "10%", maxWidth: "320px" }} />
         </UpDownWide>
       </Divider>
-        <div>
-          <nav>
-            <ul style={{ display: "flex", flex: 1, justifyContent: 'center' }}>
-              {menuLinks.map(link => (
-                <li
-                  key={link.name}
-                  style={{
-                    listStyleType: `none`,
-                    padding: `1rem`,
-                  }}
-                >
-                  <Link style={{ color: 'background' }} to={link.link}>
-                    {link.name}
-                  </Link>
-                </li>
-              ))}
-            </ul>
-          </nav>
-        </div>
+      <div>
+        <nav>
+          <ul style={{ display: "flex", flex: 1, justifyContent: 'center' }}>
+            {menuLinks.map(link => (
+              <li
+                key={link.name}
+                style={{
+                  listStyleType: `none`,
+                  padding: `1rem`,
+                }}
+              >
+                <Link style={{ }} to={link.link}>
+                  {link.name}
+                </Link>
+              </li>
+            ))}
+          </ul>
+        </nav>
+      </div>
 
       <button
         sx={{ variant: `buttons.toggle`, mt: 3 }}

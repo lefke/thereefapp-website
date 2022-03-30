@@ -23,20 +23,20 @@ module.exports = {
         link:'/'
       },
       {
-        name:'people',
-        link:'#section_people'
+        name:'projects',
+        link:'/#section_projects'
       },
       {
-        name:'people',
-        link:'#section_people'
+        name:'community',
+        link:'/#section_people'
       },
       {
-        name:'people',
-        link:'#section_people'
+        name:'the team',
+        link:'/#section_team'
       },
       {
-        name:'people',
-        link:'#section_people'
+        name:'contact',
+        link:'/#section_contact'
       },
     ]
   },

@@ -62,6 +62,11 @@ const theme = merge(tailwind, {
     pt: [4, 5],
     pb: [0, 0],
   },
+  links: {
+    nav: {
+      fontWeight: 400,
+    }
+  },
   styles: {
     root: {
       margin: 0,
