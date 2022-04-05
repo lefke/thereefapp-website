@@ -11,9 +11,9 @@ import ContactMDX from "../sections/contact"
 const Contact = () => {
 
   const [colorMode, setColorMode] = useColorMode()
-  const isDark = colorMode === `dark`
+  const isDark = colorMode === `light`
   const toggleColorMode = (e: any) => {
-    setColorMode(isDark ? `light` : `dark`)
+    setColorMode(isDark ? `dark`: `light`)
     }
 
   return (
