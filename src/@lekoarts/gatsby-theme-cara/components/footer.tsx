@@ -45,11 +45,12 @@ const Footer = ({ siteTitle, menuLinks }) => {
       </Divider>
       <div>
         <nav>
-          <ul style={{ display: "flex", flex: 1, justifyContent: 'center' }}>
+          <ul style={{ display: "flex", flex: 1, justifyContent: 'center', flexWrap: 'wrap' }}>
             {menuLinks.map(link => (
               <li
                 key={link.name}
                 style={{
+                  whiteSpace: 'nowrap',
                   listStyleType: `none`,
                   padding: `1rem`,
                 }}

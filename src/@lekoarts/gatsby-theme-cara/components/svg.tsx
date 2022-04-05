@@ -51,11 +51,20 @@ const icons = {
     ),
     viewBox: `0 0 31 27`,
   },
+  hamburger: {
+    shape: (
+      /*<path d="M0 0h24v24H0z"/><path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"/>*/
+      <path fill-rule="evenodd" clip-rule="evenodd" d="M0 2C0 0.895431 0.895431 0 2 0H22C23.1046 0 24 0.895431 24 2C24 3.10457 23.1046 4 22 4H2C0.895431 4 0 3.10457 0 2ZM0 10C0 8.89543 0.895431 8 2 8H22C23.1046 8 24 8.89543 24 10C24 11.1046 23.1046 12 22 12H2C0.895431 12 0 11.1046 0 10ZM2 16C0.895431 16 0 16.8954 0 18C0 19.1046 0.895431 20 2 20H22C23.1046 20 24 19.1046 24 18C24 16.8954 23.1046 16 22 16H2Z" />
+
+    ),
+    viewBox: `0 0 24 20`,
+  },
 }
 
-type IconType = "triangle" | "circle" | "arrowUp" | "upDown" | "box" | "hexa" | "cross"
+type IconType = "triangle" | "circle" | "arrowUp" | "upDown" | "box" | "hexa" | "cross" | "hamburger"
 
 type SVGProps = {
+  relativePosition?: boolean
   stroke?: boolean
   color?: string | number | any
   width: number
@@ -65,10 +74,10 @@ type SVGProps = {
   hiddenMobile?: boolean
 }
 
-const Svg = ({ stroke = false, color = ``, width, icon, left, top, hiddenMobile = false }: SVGProps) => (
+const Svg = ({ stroke = false, color = ``, width, icon, left, top, hiddenMobile = false, relativePosition = false }: SVGProps) => (
   <svg
     sx={{
-      position: `absolute`,
+      position: relativePosition ? 'relative' : `absolute`,
       stroke: stroke ? `currentColor` : `none`,
       fill: stroke ? `none` : `currentColor`,
       display: hiddenMobile ? hidden : `block`,
