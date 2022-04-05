@@ -1,4 +1,5 @@
 import * as React from "react"
+import { useState, useEffect, useCallback } from "react"
 /** @jsx jsx */
 import { NavLink, useColorMode, Flex, Box, jsx } from "theme-ui"
 import PropTypes from "prop-types"
@@ -6,14 +7,41 @@ import Svg from "./svg"
 // @ts-ignore
 
 
-const Header = ({ siteTitle, menuLinks }) => {
+const Header = ({ siteTitle, menuLinks, }) => {
+
+  const [headerbar, setNavbar] = useState(false)
+  const [y, setY] = useState(window.scrollY);
+
+  const handleNavigation = useCallback(
+  e => {
+    const window = e.currentTarget;
+    if (y > window.scrollY) {
+      setNavbar(true)
+      console.log("scrolling up");
+    } else if (y < window.scrollY) {
+      console.log("scrolling down");
+      setNavbar(false);
+    }
+    setY(window.scrollY);
+    }, [y]
+  );
+
+  useEffect(() => {
+    setY(window.scrollY);
+    window.addEventListener("scroll", handleNavigation);
+
+    return () => {
+      window.removeEventListener("scroll", handleNavigation);
+    };
+  }, [handleNavigation]); 
+
   const [colorMode, setColorMode] = useColorMode()
   const isDark = colorMode === `dark`
   const toggleColorMode = (e: any) => {
-    setColorMode(isDark ? `dark`: `light`)
+    setColorMode(isDark ? `light` : `dark`)
     }
   return (
-    <div style={{ display: "flex", flex: '0 1 auto', position: `sticky`, top: 0, zIndex: 100, }}>
+    <div style={{ display: "flex", flex: '0 1 auto', position: `sticky`, width: '100%', zIndex: 100, background: 'var(--theme-ui-colors-background)', backgroundColor: 'var(--theme-ui-colors-background)', top: headerbar ? '0px' : '-100px', transition: `all 0.3s ease-in-out`, }} className={headerbar ? "headerbar active" : "headerbar"} >
       <NavLink
         href={'/'}
         style={{ display: 'flex', alignSelf: 'flex-start' }}
@@ -55,13 +83,13 @@ const Header = ({ siteTitle, menuLinks }) => {
               <li
                 style={{
                   listStyleType: `none`,
-                  padding: `0.6rem 1rem`,
+                  padding: `0.7rem 1rem 0.5rem`,
                   whiteSpace: `nowrap`,
                 }}
                 onClick={toggleColorMode}
                 aria-label="Toggle dark mode"
               >
-                {isDark ? `reef dive` : `night dive`}
+                {isDark ? [<Svg icon="day" width={6} color="heading" left="0" top="0" relativePosition />] : [<Svg icon="night" width={6} color="heading" left="0" top="0" relativePosition />]}
               </li>
             </ul>
           </nav>
