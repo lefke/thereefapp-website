@@ -9,8 +9,8 @@ import { UpDown, UpDownWide } from "../styles/animations"
 import Intro from "../sections/intro"
 
 const Hero = () => (
-  <div>
-    <Content sx={{ minHeight: `90vh`, textAlign: `center` }} >
+  <div id="home">
+      <Content sx={{ minHeight: `90vh`, textAlign: `center` }} >
       <UpDownWide>
         <img width="20%" height="auto" src="/nudibranch-cutout@2x.png" alt="nudibranch cutout" style={{position: "absolute", left: "0%", top: "6%", maxWidth: "180px" }} />
       </UpDownWide>

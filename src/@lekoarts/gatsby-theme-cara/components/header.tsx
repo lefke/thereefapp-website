@@ -1,8 +1,6 @@
 import * as React from "react"
 /** @jsx jsx */
-import { NavLink, useColorMode, jsx } from "theme-ui"
-import { hidden } from "../styles/utils"
-import { Link } from "gatsby"
+import { NavLink, useColorMode, Flex, Box, jsx } from "theme-ui"
 import PropTypes from "prop-types"
 // @ts-ignore
 
@@ -27,18 +25,28 @@ const Header = ({ siteTitle, menuLinks }) => {
         <img width="auto" height="50px" src="/Logo lockup - night@2x.png" alt="The Reef App Logo" />
         )}
       </NavLink>
-      <nav style={{ display: "flex", flex: 1 }}>
+      <Flex
+        sx={{ display: "flex", flex: 1, justifyContent: "flex-end" }}
+      >
+      <Box
+        sx={{ display: ["none", "none", "none", "none", "flex"], flexWrap: "wrap" }}
+      >
+      <nav 
+        style={{ display: "flex" , flex: 1 }}
+      >
         <ul style={{ display: "flex", flex: 1, justifyContent: 'flex-end', }}>
           {menuLinks.map(link => (
             <li
               key={link.name}
               style={{
                 listStyleType: `none`,
-                padding: `0.6rem 1rem`,
+                padding: `0.6rem 0.6rem`,
                 whiteSpace: `nowrap`,
               }}
             >
-              <NavLink style={{  }} href={link.link}>
+              <NavLink 
+                href={link.link}
+              >
                 {link.name}
               </NavLink>
             </li>
@@ -56,7 +64,18 @@ const Header = ({ siteTitle, menuLinks }) => {
           </li>
         </ul>
       </nav>
-      {/*<button aria-label="Mobile Menu Toggle" aria-expanded="false" aria-pressed="false" aria-haspopup="true" ><svg viewBox="0 0 24 24"><path fill="none" d="M0 0h24v24H0z"></path><path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"></path></svg></button>*/}
+      </Box>
+      </Flex>
+
+      <Flex
+        sx={{ justifyContent: "flex-end" }}
+      >
+      <Box
+        sx={{ display: ["flex", "flex", "flex", "flex", "none"] }}
+      >
+      <button><svg viewBox="0 0 24 24"><path fill="none" d="M0 0h24v24H0z"></path><path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"></path></svg></button>
+      </Box>
+      </Flex>
     </div>
 )}
 

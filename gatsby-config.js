@@ -20,7 +20,7 @@ module.exports = {
     menuLinks:[
       {
         name:'home',
-        link:'/'
+        link:'/#home'
       },
       {
         name:'projects',
@@ -122,7 +122,6 @@ module.exports = {
     {
       resolve: "gatsby-plugin-anchor-links",
       options: {
-        offset: 100
       }
     },
   ].filter(Boolean),
