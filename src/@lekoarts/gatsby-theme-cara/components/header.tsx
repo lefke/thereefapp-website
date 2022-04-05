@@ -9,31 +9,41 @@ import Svg from "./svg"
 
 const Header = ({ siteTitle, menuLinks, }) => {
 
-  const [headerbar, setNavbar] = useState(false)
-  const [y, setY] = useState(window.scrollY);
+  const [scrollDir, setScrollDir] = useState(false);
 
-  const handleNavigation = useCallback(
-  e => {
-    const window = e.currentTarget;
-    if (y > window.scrollY) {
-      setNavbar(true)
-      console.log("scrolling up");
-    } else if (y < window.scrollY) {
-      console.log("scrolling down");
-      setNavbar(false);
+useEffect(() => {
+  const threshold = 0;
+  let lastScrollY;
+  let ticking = false;
+  // Check for the window element. 
+  // Needed for server size rendering of Gatsby else use of window.innerHeight/Width will cause build failures.
+  if (typeof window !== `undefined`) {
+    lastScrollY = window.pageYOffset
+  }
+  const updateScrollDir = () => {
+    const scrollY = window.pageYOffset;
+
+    if (Math.abs(scrollY - lastScrollY) < threshold) {
+      ticking = false;
+      return;
     }
-    setY(window.scrollY);
-    }, [y]
-  );
+    setScrollDir(scrollY > lastScrollY ? false : true);
+    lastScrollY = scrollY > 0 ? scrollY : 0;
+    ticking = false;
+  };
 
-  useEffect(() => {
-    setY(window.scrollY);
-    window.addEventListener("scroll", handleNavigation);
+  const onScroll = () => {
+    if (!ticking) {
+      window.requestAnimationFrame(updateScrollDir);
+      ticking = true;
+    }
+  };
 
-    return () => {
-      window.removeEventListener("scroll", handleNavigation);
-    };
-  }, [handleNavigation]); 
+  window.addEventListener("scroll", onScroll);
+  console.log(scrollDir);
+
+  return () => window.removeEventListener("scroll", onScroll);
+}, [scrollDir]);
 
   const [colorMode, setColorMode] = useColorMode()
   const isDark = colorMode === `dark`
@@ -41,7 +51,7 @@ const Header = ({ siteTitle, menuLinks, }) => {
     setColorMode(isDark ? `light` : `dark`)
     }
   return (
-    <div style={{ display: "flex", flex: '0 1 auto', position: `sticky`, width: '100%', zIndex: 100, background: 'var(--theme-ui-colors-background)', backgroundColor: 'var(--theme-ui-colors-background)', top: headerbar ? '0px' : '-100px', transition: `all 0.3s ease-in-out`, }} className={headerbar ? "headerbar active" : "headerbar"} >
+    <div style={{ display: "flex", flex: '0 1 auto', position: `sticky`, width: '100%', zIndex: 100, background: 'var(--theme-ui-colors-background)', backgroundColor: 'var(--theme-ui-colors-background)', top: scrollDir ? '0px' : '-100px', transition: `all 0.6s ease-in-out 0.6s`, }} className={scrollDir ? "headerbar active" : "headerbar"} >
       <NavLink
         href={'/'}
         style={{ display: 'flex', alignSelf: 'flex-start' }}
