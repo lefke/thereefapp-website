@@ -94,7 +94,7 @@ const theme = merge(tailwind, {
       color: `text`,
     },
     li: {
-      fontSize: [0, 0, 1, 1, 2, 2],
+      fontSize: [0, 0, 0, 0, 0, 0],
       "--baseline-multiplier": 0.179,
       "--x-height-multiplier": 0.35,
       color: `text`,
@@ -166,6 +166,9 @@ const theme = merge(tailwind, {
   },
   texts: {
     bigger: {
+      h1: {
+        lineHeight: '1em',
+      },
       p: {
         fontSize: [ 1, 1, 2, 2, 3, 4],
         marginTop: '1',

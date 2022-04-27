@@ -6,7 +6,7 @@ import Content from "../elements/content"
 import Svg from "./svg"
 import { UpDown, UpDownWide } from "../styles/animations"
 // @ts-ignore
-import ProjectsIntroMDX from "../sections/introProjects"
+import TestimonialsMDX from "../components/feature-testimonials"
 import FeaturedProject from "../components/feature-project"
 import { withAssetPrefix } from "gatsby"
 
@@ -25,30 +25,23 @@ const Projects = () => (
     sx={{ height: `100%`, width: `100%`, clipPath: `polygon(0 0, 100% 0%, 100% 100%, 0 100%)` }}
     />
     <Content
-        sx={{ justifyContent: `flex-start`, minHeight: [`25vh`, `25vh`], }}
+        sx={{ justifyContent: `flex-start`, minHeight: [`25vh`, `25vh`], marginTop: '-34vh' }}
     >
       <Inner>
-          <ProjectsIntroMDX />
-            <button
-                sx={{ variant: `buttons.toggle`, mt: 3 }}
-                onClick={null}
-                type="button"
-                aria-label="Toggle dark mode"
-            >
-                Apply for early access
-            </button>
+          <div>
+              <TestimonialsMDX />
+          </div>
             <div>
                 <img width="40%" height="auto" src="/parrot-fish@2x.png"  alt="parrot fish cutout" style={{ maxWidth: "380px", zIndex: "-99", position: "relative", left: "-20%", top: "14%", margin: "30px 0 -10%"}} />
                 <div
                     sx={{
                         bg: "#ffffff",
-                        py: [1,1,1,1],
+                        py: [3,3,3,3],
                         px: [3,3,3,3],
                         borderRadius: "lg",
                         boxShadow: `lg`,
                     }}
                 >
-                    <h3>Featured projects</h3>
                     <FeaturedProject />
                 </div>
             </div>
