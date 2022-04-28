@@ -26,7 +26,7 @@ const MapProjects = () => (
     <Content sx={{ minHeight: "70vh", mt: [`100px`, `200px`, `300px`, `300px`] }}>
         <img width="60%" height="auto" src="/platform-project@2x.png" alt="coral restoration underwater platform" style={{marginTop: '-70px', position: "absolute", left: "10%", top: "0%", maxWidth: "700px" }} />
         <UpDownWide>
-            <img width="350" height="auto" src="/shoal-collage@2x.png"  alt="collage of shoal of fish" style={{position: "absolute", right: "0%", top: "54%"}} />        </UpDownWide>
+            <img width="60%" height="auto" src="/shoal-collage@2x.png"  alt="collage of shoal of fish" style={{position: "absolute", right: "0%", top: "54%", maxWidth: "350px"}} />        </UpDownWide>
       <Inner
         sx={{
           display: `grid`,

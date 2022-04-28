@@ -24,13 +24,13 @@ const People = () => (
     bg="icon_yellow"
     sx={{ height: `100%`, width: `100%`, clipPath: `polygon(0 100px, 100% 0, 100% 100%, 0 100%)` }}
     />
-    <Content sx={{ minHeight: "70vh", pt: [`80px`, `200px`, `300px`, `300px`], pb: [`80px`, `200px`, `300px`, `300px`]}}>
+    <Content sx={{ minHeight: "70vh", pt: [`80px`, `200px`, `300px`, `300px`], pb: [`80px`, `100px`, `200px`, `200px`]}}>
       <Inner>
         <div
             sx={{
             display: `grid`,
             gridGap: [2, 2, 2, 2],
-            gridTemplateColumns: [`1fr`, `repeat(2, 2fr)`, `repeat(2, 2fr)`, `repeat(4, 2fr)`, `repeat(4, 2fr)`],
+            gridTemplateColumns: [`1fr`, `repeat(2, 2fr)`, `repeat(2, 2fr)`, `repeat(3, 2fr)`, `repeat(4, 2fr)`],
             h2: { gridColumn: `-1/1` },
             fontSize: '0.8rem',
             }}
@@ -45,7 +45,7 @@ const People = () => (
       />
     <Divider >
       <UpDown>
-          <img width="60%" height="auto" src="/no-lotion.png"  alt="collage of sunscreen on coral crossed out" style={{position: "absolute", right: "0%", bottom: "10%", maxWidth: "280px" }} />
+          <img width="44%" height="auto" src="/no-lotion.png"  alt="collage of sunscreen on coral crossed out" style={{position: "absolute", right: "0%", bottom: "10%", maxWidth: "360px" }} />
       </UpDown>
       <UpDownWide>
       </UpDownWide>

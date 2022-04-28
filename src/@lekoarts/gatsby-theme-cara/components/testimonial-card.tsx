@@ -27,6 +27,7 @@ const TestimonialCard = ({ image, imageAlt, link, title, subtitle, children, bg,
       px: [2, 2, 2],
       py: [2, 2, 2],
       color: `#1C0248`,
+      textAlign: 'center',
       transition: `all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275) !important`,
       "&:hover": {
         color: `#1C0248 !important`,
@@ -37,6 +38,8 @@ const TestimonialCard = ({ image, imageAlt, link, title, subtitle, children, bg,
   
     <img width="100%" height="auto" src={image} alt={imageAlt}
         sx={{
+            width: '80%',
+            mx: 'auto',
             mb: [2, 2],
             borderRadius: '50%',
         }}

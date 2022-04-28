@@ -38,7 +38,7 @@ const MapProjects = () => (
         }}>
           <img width="100%" height="auto" src="/dummy-restoration-profile@3x.png" alt="The Reef App restoration profile screen" sx={{ display: hidden, maxWidth: '400px', boxShadow: `lg`, left: '0', my: 4 }} />
           <img width="50%" height="auto" src="/dummy-restoration-profile-mobile@3x.png" alt="The Reef App restoration profile screen" sx={{ display: desktopHidden, boxShadow: `lg`, mx: 'auto', my: 4 }} />
-        <div sx={{order: [-1, -1, -1, 0,0],}}>
+        <div sx={{order: [-1, -1, -1, 0,0], pr:[0,0,0,0,0,6]}}>
             <CommunityMDX />
             <button
                 sx={{ variant: `buttons.toggle`, ml: `0`, mt: 3 }}
