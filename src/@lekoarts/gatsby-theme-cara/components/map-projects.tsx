@@ -36,7 +36,7 @@ const MapProjects = () => (
         <div sx={{order: '0',}}>
           <MapProjectsMDX />
           <button
-              sx={{ variant: `buttons.toggle`, ml: `0`, mt: 3 }}
+              sx={{ variant: `buttons.blue`, ml: `0`, mt: 3 }}
               onClick={null}
               type="button"
               aria-label="Toggle dark mode"

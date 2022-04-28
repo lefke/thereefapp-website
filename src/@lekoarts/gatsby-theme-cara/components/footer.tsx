@@ -65,7 +65,7 @@ const Footer = ({ siteTitle, menuLinks }) => {
       </div>
 
       <button
-        sx={{ variant: `buttons.toggle`, mt: 3 }}
+        sx={{ variant: `buttons.pink`, mt: 3 }}
         onClick={null}
         type="button"
         aria-label="Toggle dark mode"

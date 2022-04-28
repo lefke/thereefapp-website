@@ -41,7 +41,7 @@ const MapProjects = () => (
         <div sx={{order: [-1, -1, -1, 0,0], pr:[0,0,0,0,0,6]}}>
             <CommunityMDX />
             <button
-                sx={{ variant: `buttons.toggle`, ml: `0`, mt: 3 }}
+                sx={{ variant: `buttons.yellow`, ml: `0`, mt: 3 }}
                 onClick={null}
                 type="button"
                 aria-label="Toggle dark mode"

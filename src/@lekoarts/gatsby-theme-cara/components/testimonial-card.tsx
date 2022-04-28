@@ -32,6 +32,7 @@ const TestimonialCard = ({ image, imageAlt, link, title, subtitle, children, bg,
       "&:hover": {
         color: `#1C0248 !important`,
         transform: `translateY(-5px)`,
+      textDecoration: `none`,
       },
     }}
   >

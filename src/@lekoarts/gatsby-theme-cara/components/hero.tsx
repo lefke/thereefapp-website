@@ -21,7 +21,7 @@ const Hero = () => (
         <Intro />
       </Inner>
       <button
-        sx={{ variant: `buttons.toggle`, mt: 3 }}
+        sx={{ variant: `buttons.yellow`, mt: 3 }}
         onClick={null}
         type="button"
         aria-label="Toggle dark mode"

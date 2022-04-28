@@ -32,7 +32,8 @@ const ProjectCard = ({ image, imageMobile, logo, description, location, price, i
         py: [2, 2, 2],
         color: `#1C0248`,
       "&:hover": {
-        color: `#1C0248 !important`,
+        color: `#1C0248`,
+        textDecoration: `none`,
       },
     }}
   >
@@ -66,7 +67,7 @@ const ProjectCard = ({ image, imageMobile, logo, description, location, price, i
         </ul>
         <h4 sx={{ my: [1,1,1,]}}>{price}</h4>
         <button
-          sx={{ variant: `buttons.toggle`, mt: 3, ml: 0, }}
+          sx={{ variant: `buttons.pink`, mt: 3, ml: 0, }}
           onClick={null}
           type="button"
           aria-label="Toggle dark mode"
