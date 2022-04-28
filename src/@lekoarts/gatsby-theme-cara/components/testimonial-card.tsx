@@ -1,7 +1,9 @@
 /** @jsx jsx */
 import { jsx } from "theme-ui"
+import { hidden } from "../styles/utils"
 
 type TestimonialCardProps = {
+  hiddenMobile?: boolean
   image: string
   imageAlt: string
   link: string
@@ -10,12 +12,13 @@ type TestimonialCardProps = {
   bg: string
 }
 
-const TestimonialCard = ({ image, imageAlt, link, title, children, bg }: TestimonialCardProps) => (
+const TestimonialCard = ({ image, imageAlt, link, title, children, bg, hiddenMobile=false }: TestimonialCardProps) => (
   <a
     href={link}
     target="_blank"
     rel="noreferrer noopener"
     sx={{
+      display: hiddenMobile ? hidden : `block`,
       width: `100%`,
       position: `relative`,
       textDecoration: `none`,

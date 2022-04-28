@@ -45,7 +45,7 @@ const Projects = () => (
                     <FeaturedProject />
                 </div>
             </div>
-            <p sx={{ textAlign: `center` }}>Get your project featured</p>
+            <p sx={{ textAlign: `center` }}>More projects coming soon. Get your project featured here</p>
       </Inner>
     </Content>
   </div>

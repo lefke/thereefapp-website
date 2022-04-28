@@ -54,7 +54,7 @@ const theme = merge(tailwind, {
       },
     },
   },
-  breakpoints: [ '321px',`376px`, `668px`, `900px`, `1200px`, `1600px`],
+  breakpoints: [ '321px',`391px`, `668px`, `900px`, `1200px`, `1600px`],
   footer: {
     fontSize: [0, 0, 1],
     textAlign: `center`,
@@ -94,7 +94,7 @@ const theme = merge(tailwind, {
       color: `text`,
     },
     li: {
-      fontSize: [0, 0, 0, 0, 0, 0],
+      fontSize: [0, 0, 1, 1, 2, 2],
       "--baseline-multiplier": 0.179,
       "--x-height-multiplier": 0.35,
       color: `text`,
@@ -181,6 +181,10 @@ const theme = merge(tailwind, {
         marginTop: '1',
         lineHeight: '1em',
         },
+          li: {
+            fontSize: [0, 0, 0, 0, 0, 0],
+            color: `text`,
+          },
     },
   },
   p: {

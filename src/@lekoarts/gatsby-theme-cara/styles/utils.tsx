@@ -1,2 +1,2 @@
-export const hidden = [`none`, `none`, `block`]
-export const desktopHidden = [`block`, `block`, `none`]
+export const hidden = [`none`, `none`, `none`, `block`]
+export const desktopHidden = [`block`, `block`, `block`, `none`]

@@ -5,6 +5,8 @@ type ProjectCardProps = {
   image: string
   imageAlt: string
   logo: string
+  description: string
+  location: string
   price: string
   link: string
   title: string
@@ -12,7 +14,7 @@ type ProjectCardProps = {
   bg: string
 }
 
-const ProjectCard = ({ image, logo, price, imageAlt, link, title, children, bg }: ProjectCardProps) => (
+const ProjectCard = ({ image, logo, description, location, price, imageAlt, link, title, children, bg }: ProjectCardProps) => (
   <a
     href={link}
     target="_blank"
@@ -20,7 +22,7 @@ const ProjectCard = ({ image, logo, price, imageAlt, link, title, children, bg }
     sx={{
         display: `grid`,
         gridGap: [2, 2, 3, 4],
-        gridTemplateColumns: [`1fr`, `1fr`, `repeat(2, 1fr)`, `repeat(2, 1fr)`],
+        gridTemplateColumns: [`1fr`, `1fr`, ` 1fr`, `2fr 3fr`, `2fr 3fr`],
         h2: { gridColumn: `-1/1` },
         textDecoration: `none`,
         borderRadius: `lg`,
@@ -32,30 +34,35 @@ const ProjectCard = ({ image, logo, price, imageAlt, link, title, children, bg }
       },
     }}
   >
-  
-    <img width="100%" height="auto" src={image} alt={imageAlt}
-        sx={{
-        }}
-    />
+    <div sx={{ textAlign: 'center'}}>
+      <img width="100%" height="auto" src={image} alt={imageAlt}
+          sx={{
+          }}
+      />
+      <img width="120px" height="auto" src={logo}
+          sx={{
+            mt: '-40px',
+            mx: 'auto',
+          }}
+      />
+    </div>
     <div>
       <h4 sx={{ mt: [1,1,1,]}}>Join the global movement to save coral reefs. Sign up for a restoration dive.</h4>
       <div>
-        <img width="30%" height="auto" src={logo}
-            sx={{
-            }}
-        />
-        <h5 sx={{ my: [1,1,1,]}}>{title}</h5>
+        <h4 sx={{ my: [1,1,1,]}}>{title}</h4>
+        <h5 sx={{ my: [1,1,1,]}}>{location}</h5>
+        <p sx={{ opacity: 0.85, fontSize: [0, 0, 0, 0, 0, 0], fontWeight: `normal`,}}>{description}</p>
         <p sx={{ opacity: 0.85, fontSize: [0, 0, 0, 0, 0, 0], fontWeight: `normal`,}}>What's included:</p>
-        <ul sx={{ opacity: 0.85, fontSize: [0, 0, 0, 0, 0, 0], fontWeight: `normal`,}}>
+        <ul sx={{ variant: 'texts.smaller', opacity: 0.85, fontSize: [0, 0, 0, 0, 0, 0], fontWeight: `normal`,}}>
           {children}
         </ul>
         <h4 sx={{ my: [1,1,1,]}}>{price}</h4>
-      <button
-        sx={{ variant: `buttons.toggle`, mt: 3, ml: 0, }}
-        onClick={null}
-        type="button"
-        aria-label="Toggle dark mode"
-      >
+        <button
+          sx={{ variant: `buttons.toggle`, mt: 3, ml: 0, }}
+          onClick={null}
+          type="button"
+          aria-label="Toggle dark mode"
+        >
         Join waitlist
       </button>
       </div>
