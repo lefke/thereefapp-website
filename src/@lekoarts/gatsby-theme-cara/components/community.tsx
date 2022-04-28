@@ -1,8 +1,9 @@
 /** @jsx jsx */
 import { jsx } from "theme-ui"
 import Divider from "../elements/divider"
-import Inner from "../elements/inner"
+import Inner from "../elements/inner-right-content"
 import Content from "../elements/content"
+import { hidden, desktopHidden } from "../styles/utils"
 import Svg from "./svg"
 import { UpDown, UpDownWide } from "../styles/animations"
 // @ts-ignore
@@ -28,9 +29,17 @@ const MapProjects = () => (
         </UpDown>
         <UpDownWide>
         </UpDownWide>
-        <img width="55%" height="auto" src="/people-bubbles@2x.png"  alt="divers working on frame" style={{position: "absolute", left: "0%", top: "84%", maxWidth: "600px"}} />
-      <Inner>
-          <CommunityMDX />
+        <img width="55%" height="auto" src="/people-bubbles@2x.png"  alt="divers working on frame" style={{position: "absolute", left: "0%", top: "92%", maxWidth: "520px"}} />
+      <Inner
+        sx={{
+          display: `grid`,
+          gridGap: [1, 1, 3, 4],
+          gridTemplateColumns: [`1fr`, `1fr`,  `1fr`, `1fr 3fr`, `1fr 3fr`, `1fr 3fr`],
+        }}>
+          <img width="100%" height="auto" src="/dummy-restoration-profile@3x.png" alt="The Reef App restoration profile screen" sx={{ display: hidden, maxWidth: '400px', boxShadow: `lg`, left: '0', my: 4 }} />
+          <img width="50%" height="auto" src="/dummy-restoration-profile-mobile@3x.png" alt="The Reef App restoration profile screen" sx={{ display: desktopHidden, boxShadow: `lg`, mx: 'auto', my: 4 }} />
+        <div sx={{order: [-1, -1, -1, 0,0],}}>
+            <CommunityMDX />
             <button
                 sx={{ variant: `buttons.toggle`, ml: `0`, mt: 3 }}
                 onClick={null}
@@ -40,6 +49,7 @@ const MapProjects = () => (
                 Apply for early access
             </button>
             <p sx={{ variant: `p.microCopy.p`}}>Get early access and help shape the community.</p>
+          </div>
       </Inner>
     </Content>
         <Divider

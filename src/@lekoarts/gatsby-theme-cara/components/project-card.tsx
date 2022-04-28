@@ -1,8 +1,10 @@
 /** @jsx jsx */
 import { jsx } from "theme-ui"
+import { hidden, desktopHidden } from "../styles/utils"
 
 type ProjectCardProps = {
   image: string
+  imageMobile: string
   imageAlt: string
   logo: string
   description: string
@@ -14,7 +16,7 @@ type ProjectCardProps = {
   bg: string
 }
 
-const ProjectCard = ({ image, logo, description, location, price, imageAlt, link, title, children, bg }: ProjectCardProps) => (
+const ProjectCard = ({ image, imageMobile, logo, description, location, price, imageAlt, link, title, children, bg }: ProjectCardProps) => (
   <a
     href={link}
     target="_blank"
@@ -37,6 +39,12 @@ const ProjectCard = ({ image, logo, description, location, price, imageAlt, link
     <div sx={{ textAlign: 'center'}}>
       <img width="100%" height="auto" src={image} alt={imageAlt}
           sx={{
+            display: hidden,
+          }}
+      />
+      <img width="100%" height="auto" src={imageMobile} alt={imageAlt}
+          sx={{
+            display: desktopHidden,
           }}
       />
       <img width="120px" height="auto" src={logo}

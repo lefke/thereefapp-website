@@ -8,11 +8,12 @@ type TestimonialCardProps = {
   imageAlt: string
   link: string
   title: string
+  subtitle: string
   children: React.ReactNode
   bg: string
 }
 
-const TestimonialCard = ({ image, imageAlt, link, title, children, bg, hiddenMobile=false }: TestimonialCardProps) => (
+const TestimonialCard = ({ image, imageAlt, link, title, subtitle, children, bg, hiddenMobile=false }: TestimonialCardProps) => (
   <a
     href={link}
     target="_blank"
@@ -42,7 +43,7 @@ const TestimonialCard = ({ image, imageAlt, link, title, children, bg, hiddenMob
     />
     <div
       sx={{
-        pb: [2, 2],
+        pb: [1, 1],
         fontSize: [1, 1, 1, 1, 1, 1],
         fontWeight: `bold`,
         lineHeight: 1,
@@ -50,6 +51,17 @@ const TestimonialCard = ({ image, imageAlt, link, title, children, bg, hiddenMob
       }}
     >
       {title}
+    </div>
+    <div
+      sx={{
+        pb: [1, 1],
+        fontSize: [1, 1, 1, 1, 1, 1],
+        fontWeight: `bold`,
+        lineHeight: 1,
+        textAlign: "center",
+      }}
+    >
+      {subtitle}
     </div>
     <div sx={{ opacity: 0.85, fontSize: [0, 0, 0, 0, 0, 0], lineHeight: [1, 1, 1, 1, 1, 1], }}>{children}</div>
   </a>

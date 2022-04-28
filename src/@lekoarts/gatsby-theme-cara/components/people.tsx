@@ -8,7 +8,6 @@ import Svg from "./svg"
 import { UpDown, UpDownWide } from "../styles/animations"
 // @ts-ignore
 import SupportersMDX from "../sections/supporters"
-import AdvisorsMDX from "../sections/advisors"
 
 const People = () => (
   <div style={{
@@ -20,27 +19,37 @@ const People = () => (
     }}
     sx={{ mt: [`-100px`] }}
   >
+    <div id="section_team"></div>
     <Divider
     bg="icon_yellow"
     sx={{ height: `100%`, width: `100%`, clipPath: `polygon(0 100px, 100% 0, 100% 100%, 0 100%)` }}
     />
-    <Divider >
-      <UpDown>
-          <img width="80%" height="auto" src="/no-lotion.png"  alt="collage of sunscreen on coral crossed out" style={{position: "absolute", right: "0%", top: "24%", maxWidth: "320px" }} />
-      </UpDown>
-      <UpDownWide>
-      </UpDownWide>
-    </Divider>
-    <Content sx={{ minHeight: "70vh", pt: [`100px`, `200px`, `300px`, `300px`]}}>
+    <Content sx={{ minHeight: "70vh", pt: [`80px`, `200px`, `300px`, `300px`], pb: [`80px`, `200px`, `300px`, `300px`]}}>
       <Inner>
-        <SupportersMDX />
-        <AdvisorsMDX />
+        <div
+            sx={{
+            display: `grid`,
+            gridGap: [2, 2, 2, 2],
+            gridTemplateColumns: [`1fr`, `repeat(2, 2fr)`, `repeat(2, 2fr)`, `repeat(4, 2fr)`, `repeat(4, 2fr)`],
+            h2: { gridColumn: `-1/1` },
+            fontSize: '0.8rem',
+            }}
+        >
+          <SupportersMDX />
+        </div>
       </Inner>
     </Content>
       <Divider
       bg="icon_yellow"
       sx={{ position: `initial`, justifySelf: `flex-end`, height: `100px`, width: `100%`, clipPath: `polygon(0 100%, 100% 0%, 100% 100%)` }}
       />
+    <Divider >
+      <UpDown>
+          <img width="60%" height="auto" src="/no-lotion.png"  alt="collage of sunscreen on coral crossed out" style={{position: "absolute", right: "0%", bottom: "10%", maxWidth: "280px" }} />
+      </UpDown>
+      <UpDownWide>
+      </UpDownWide>
+    </Divider>
   </div>
 )
 
