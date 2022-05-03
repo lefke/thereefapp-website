@@ -21,7 +21,7 @@ const People = () => (
   >
     <div id="section_team"></div>
     <Divider
-    bg="icon_yellow"
+    bg="color_divider_bg"
     sx={{ height: `100%`, width: `100%`, clipPath: `polygon(0 100px, 100% 0, 100% 100%, 0 100%)` }}
     />
     <Content sx={{ minHeight: "70vh", pt: [`80px`, `200px`, `300px`, `300px`], pb: [`80px`, `100px`, `200px`, `200px`]}}>
@@ -31,7 +31,10 @@ const People = () => (
             display: `grid`,
             gridGap: [2, 2, 2, 2],
             gridTemplateColumns: [`1fr`, `repeat(2, 2fr)`, `repeat(2, 2fr)`, `repeat(3, 2fr)`, `repeat(4, 2fr)`],
-            h2: { gridColumn: `-1/1` },
+            h2: { gridColumn: `-1/1`, color: `#FCD901`, },
+            a: { color: `color_divider_text`, 
+                "&:hover": { color: 'color_divider_text'},
+                },
             fontSize: '0.8rem',
             }}
         >
@@ -40,7 +43,7 @@ const People = () => (
       </Inner>
     </Content>
       <Divider
-      bg="icon_yellow"
+      bg="color_divider_bg"
       sx={{ position: `initial`, justifySelf: `flex-end`, height: `100px`, width: `100%`, clipPath: `polygon(0 100%, 100% 0%, 100% 100%)` }}
       />
     <Divider >

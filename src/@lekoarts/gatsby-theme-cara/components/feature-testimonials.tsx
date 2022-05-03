@@ -9,8 +9,6 @@ const Testimonials = () => (
         display: `grid`,
         gridGap: [2, 2, 2, 2],
         gridTemplateColumns: [`1fr`, `repeat(2, 2fr)`, `repeat(2, 2fr)`, `repeat(4, 2fr)`, `repeat(4, 2fr)`],
-        h2: { gridColumn: `-1/1` },
-        fontSize: '0.8rem',
         }}
     >
         <TestimonialsMDX />

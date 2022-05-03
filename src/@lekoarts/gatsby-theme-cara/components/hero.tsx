@@ -17,7 +17,13 @@ const Hero = () => (
       <UpDown>
         <img width="35%" height="auto" src="/fish@2x.png" alt="fish floating in header" style={{position: "absolute", left: "65%", top: "55%", maxWidth: "350px" }} />
       </UpDown>
-      <Inner sx={{ variant: `texts.bigger`, textAlign: `center` }}>
+      <Inner sx={{ 
+        variant: `texts.bigger`, 
+        textAlign: `center`, 
+        h1: { color: 'hero_heading'},
+        p: {color: 'color_divider_text'},
+        }}
+        >
         <Intro />
       </Inner>
       <button
@@ -28,7 +34,7 @@ const Hero = () => (
       >
         Apply for early access
       </button>
-      <p className="microCopy" sx={{ variant: `texts.smaller`}}>Get early access and help shape the community.</p>
+      <p className="microCopy" sx={{ variant: `texts.smaller`, color: 'color_divider_text',}}>Get early access and help shape the community.</p>
     </Content>
         <Divider
         bg="#ffffff"

@@ -30,7 +30,6 @@ const TestimonialCard = ({ image, imageAlt, link, title, subtitle, children, bg,
       textAlign: 'center',
       transition: `all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275) !important`,
       "&:hover": {
-        color: `#1C0248 !important`,
         transform: `translateY(-5px)`,
       textDecoration: `none`,
       },

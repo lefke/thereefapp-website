@@ -20,7 +20,7 @@ const MapProjects = () => (
     sx={{ mt: [`-100px`] }}
   >
     <Divider
-    bg="icon_yellow"
+    bg="color_divider_bg"
     sx={{ height: `100%`, width: `100%`, clipPath: `polygon(0 0, 100% 100px, 100% 100%, 0 100%)` }}
     />
     <Content sx={{ minHeight: "70vh", mt: [`100px`, `200px`, `300px`, `300px`] }}>
@@ -32,11 +32,13 @@ const MapProjects = () => (
           display: `grid`,
           gridGap: [1, 1, 3, 4],
           gridTemplateColumns: [`1fr`, `1fr`, `1fr`, `3fr 1fr`, `3fr 1fr`, `3fr 1fr`],
+          h2:{ color: `color_divider_heading`,},
+          color: 'color_divider_text',
         }}>
         <div sx={{order: '0',}}>
           <MapProjectsMDX />
           <button
-              sx={{ variant: `buttons.blue`, ml: `0`, mt: 3 }}
+              sx={{ variant: `buttons.blue`, ml: `0`, mt: 3, color: `#1C0248`, }}
               onClick={null}
               type="button"
               aria-label="Toggle dark mode"

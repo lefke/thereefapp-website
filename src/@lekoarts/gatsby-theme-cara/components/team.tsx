@@ -4,6 +4,7 @@ import Divider from "../elements/divider"
 import Inner from "../elements/inner"
 import Content from "../elements/content"
 import { hidden, desktopHidden } from "../styles/utils"
+import Emoji from "../components/emoji"
 import Svg from "./svg"
 import { UpDown, UpDownWide } from "../styles/animations"
 // @ts-ignore

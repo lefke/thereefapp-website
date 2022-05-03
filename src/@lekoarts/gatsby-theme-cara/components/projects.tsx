@@ -17,6 +17,7 @@ const Projects = () => (
     alignItems: `stretch`,
     position: `relative`,
     marginBottom: `-1px`,
+    color: `#1C0248`,
     }}
   >
     <div id="section_projects"></div>
@@ -28,7 +29,13 @@ const Projects = () => (
         sx={{ justifyContent: `flex-start`, minHeight: [`25vh`, `25vh`], marginTop: '-34vh' }}
     >
       <Inner>
-          <div>
+          <div
+            sx={{
+            h2: { color: 'var(--theme-ui-colors-text)',},
+            fontSize: '0.8rem',
+            color: 'var(--theme-ui-colors-text)',
+            }}
+          >
               <TestimonialsMDX />
           </div>
             <div>
@@ -40,6 +47,7 @@ const Projects = () => (
                         px: [3,3,3,3],
                         borderRadius: "lg",
                         boxShadow: `lg`,
+                        li: {color: `secondary`,},
                     }}
                 >
                     <FeaturedProject />

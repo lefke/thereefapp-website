@@ -44,6 +44,9 @@ const Mission = () => (
             zIndex: "99",
             textAlign: `center`,
             mb: [`4rem`],
+            h3: {
+            color: `#1C0248`,
+            },
           }}
         >
           <MissionMDX/>

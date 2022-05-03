@@ -35,6 +35,9 @@ const ProjectCard = ({ image, imageMobile, logo, description, location, price, i
         color: `#1C0248`,
         textDecoration: `none`,
       },
+      li: {
+        color: `#1C0248`,
+      }
     }}
   >
     <div sx={{ textAlign: 'center'}}>

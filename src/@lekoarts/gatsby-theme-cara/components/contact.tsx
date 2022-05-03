@@ -40,7 +40,11 @@ const Contact = () => {
             justifyContent: 'flex-end',
             alignItems: `center`,
             mb: `100px`,
-          }}>
+            h2:{ color: `color_divider_heading`,},
+            color: 'color_divider_text',
+            p:{ color: `color_divider_text`,},
+            }}
+          >
         <ContactMDX />
         <Flex
             sx={{
