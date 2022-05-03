@@ -9,6 +9,9 @@ const Testimonials = () => (
         display: `grid`,
         gridGap: [2, 2, 2, 2],
         gridTemplateColumns: [`1fr`, `repeat(2, 2fr)`, `repeat(2, 2fr)`, `repeat(4, 2fr)`, `repeat(4, 2fr)`],
+        a: { color: `text`, 
+            "&:hover": { color: 'text'},
+            },
         }}
     >
         <TestimonialsMDX />
