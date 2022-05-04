@@ -98,15 +98,20 @@ const Header = ({ siteTitle, menuLinks, }) => {
         </nav>
 
       <Menu>
-        <Menu.Button  className="justify-end rounded-md px-4 py-2 text-sm font-medium text-white hover:bg-opacity-30 focus:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-opacity-75 md:hidden">
-          <Svg icon="hamburger" width={8} color="heading" left="0" top="0" relativePosition />
+            {({ open }) => (
+          <>
+        <Menu.Button className={`justify-end rounded-md px-4 py-2 text-sm font-medium text-white hover:bg-opacity-30 focus:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-opacity-75 md:hidden`}>
+          
+            {open ? [<Svg icon="close" width={10} color="wave" left="0" top="0" relativePosition />] : [<Svg icon="hamburger" width={8} color="wave" left="0" top="0" relativePosition />]}
         </Menu.Button>
-        <Menu.Items>
+        <Menu.Items className="absolute right-2 top-16 mt-2 w-56 origin-top-right divide-y divide-gray-100 rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none p-1 bg-wave dark:bg-background">
           {menuLinks.map(link => (
             <Menu.Item>
               {({ active }) => (
                 <a
-                  className={`${active ? 'bg-blue-500 text-white' : 'bg-white text-black'}`}
+                    className={`${
+                      active ? 'hover:bg-opacity-70' : 'text-gray-900'
+                    } group flex w-full items-center rounded-md px-2 py-2 my-1 text-sm bg-wave text-secondary`}
                   href={link.link}
                 >
                   {link.name}
@@ -118,11 +123,14 @@ const Header = ({ siteTitle, menuLinks, }) => {
             <a
             onClick={toggleColorMode}
             aria-label="Toggle dark mode"
+            className={` hover:bg-icon_pink group flex w-full items-center rounded-md px-2 py-2 my-1 text-sm bg-wave text-secondary`}
           >
             {isDark ? [<Svg icon="day" width={6} color="icon_yellow" left="0" top="0" relativePosition />] : [<Svg icon="night" width={6} color="heading" left="0" top="0" relativePosition />]}
             </a>
           </Menu.Item>
         </Menu.Items>
+        </>
+            )}
       </Menu>
     </div>
 )}
