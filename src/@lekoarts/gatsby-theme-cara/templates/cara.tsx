@@ -10,7 +10,7 @@ import People from "../components/people"
 import Team from "../components/team"
 import Contact from "../components/contact"
 
-const Cara = () => (
+const TheReefApp = () => (
   <Layout>
     <div>
       <Hero  />
@@ -25,4 +25,4 @@ const Cara = () => (
   </Layout>
 )
 
-export default Cara
+export default TheReefApp

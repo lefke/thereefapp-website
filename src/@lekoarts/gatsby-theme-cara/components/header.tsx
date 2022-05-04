@@ -1,5 +1,6 @@
 import * as React from "react"
-import { useState, useEffect, useCallback } from "react"
+import { Fragment, useEffect, useRef, useState, useCallback } from "react"
+import { Menu, Transition } from '@headlessui/react'
 /** @jsx jsx */
 import { NavLink, useColorMode, Flex, Box, jsx } from "theme-ui"
 import PropTypes from "prop-types"
@@ -106,22 +107,36 @@ const Header = ({ siteTitle, menuLinks, }) => {
         </Box>
       </Flex>
 
-      <Flex
-        sx={{ justifyContent: "flex-end" }}
-      >
-        <Box
-          sx={{ display: ["flex", "flex", "flex", "flex", "none"], justifyContent: "flex-end"  }}
+        <Menu
         >
-          <NavLink
+          <Menu.Button  className="inline-flex w-full justify-center rounded-md bg-black bg-opacity-20 px-4 py-2 text-sm font-medium text-white hover:bg-opacity-30 focus:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-opacity-75"
             style={{
-              alignItems: "center",
-              padding: `0.6rem 0.6rem`,
-              margin: 'auto',
             }}>
             <Svg icon="hamburger" width={8} color="heading" left="0" top="0" relativePosition />
-          </NavLink>
-        </Box>
-      </Flex>
+          </Menu.Button>
+          <Menu.Items>
+            {menuLinks.map(link => (
+              <Menu.Item>
+                {({ active }) => (
+                  <a
+                    className={`${active && 'bg-blue-500'}`}
+                    href={link.link}
+                  >
+                    {link.name}
+                  </a>
+                )}
+              </Menu.Item>
+            ))}
+            <Menu.Item>
+              <a
+              onClick={toggleColorMode}
+              aria-label="Toggle dark mode"
+            >
+              {isDark ? [<Svg icon="day" width={6} color="icon_yellow" left="0" top="0" relativePosition />] : [<Svg icon="night" width={6} color="heading" left="0" top="0" relativePosition />]}
+              </a>
+            </Menu.Item>
+          </Menu.Items>
+        </Menu>
     </div>
 )}
 

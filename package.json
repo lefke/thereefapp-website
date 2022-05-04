@@ -16,6 +16,7 @@
     "clean": "gatsby clean"
   },
   "dependencies": {
+    "@headlessui/react": "^1.6.1",
     "@lekoarts/gatsby-theme-cara": "^3.0.0",
     "dotenv": "^14.2.0",
     "gatsby": "^4.10.3",
