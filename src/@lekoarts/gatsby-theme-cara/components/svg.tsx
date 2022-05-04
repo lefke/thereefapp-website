@@ -78,7 +78,7 @@ const icons = {
   },
 }
 
-type IconType = "triangle" | "circle" | "arrowUp" | "upDown" | "box" | "hexa" | "cross" | "hamburger" | "day" | "night"
+type IconType = "triangle" | "circle" | "arrowUp" | "upDown" | "box" | "hexa" | "cross" | "hamburger" | "close" | "day" | "night"
 
 type SVGProps = {
   relativePosition?: boolean
@@ -87,11 +87,12 @@ type SVGProps = {
   width: number
   icon: IconType
   left: string
+  right: string
   top: string
   hiddenMobile?: boolean
 }
 
-const Svg = ({ stroke = false, color = ``, width, icon, left, top, hiddenMobile = false, relativePosition = false }: SVGProps) => (
+const Svg = ({ stroke = false, color = ``, width, icon, left, right, top, hiddenMobile = false, relativePosition = false }: SVGProps) => (
   <svg
     sx={{
       position: relativePosition ? 'relative' : `absolute`,
@@ -101,6 +102,7 @@ const Svg = ({ stroke = false, color = ``, width, icon, left, top, hiddenMobile 
       color,
       width,
       left,
+      right,
       top,
     }}
     viewBox={icons[icon].viewBox}

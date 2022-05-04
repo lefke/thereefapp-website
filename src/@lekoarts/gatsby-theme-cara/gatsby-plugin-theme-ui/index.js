@@ -2,7 +2,7 @@ import { merge } from "theme-ui"
 import { tailwind } from "@theme-ui/presets"
 
 const theme = merge(tailwind, {
-  initialColorModeName: `light`,
+  initialColorModeName: `dark`,
   config: {
     useCustomProperties: true,
   },
@@ -197,7 +197,7 @@ const theme = merge(tailwind, {
       backgroundColor: `button_toggle_bg`,
       cursor: `pointer`,
       alignSelf: `center`,
-      px: 3,
+      px: 4,
       py: 2,
       transition: `all 0.3s ease-in-out`,
       "&:hover": {
@@ -217,7 +217,7 @@ const theme = merge(tailwind, {
       backgroundColor: `icon_yellow`,
       cursor: `pointer`,
       alignSelf: `center`,
-      px: 3,
+      px: 4,
       py: 2,
       transition: `all 0.3s ease-in-out`,
       "&:hover": {
@@ -237,7 +237,7 @@ const theme = merge(tailwind, {
       backgroundColor: `icon_blue`,
       cursor: `pointer`,
       alignSelf: `center`,
-      px: 3,
+      px: 4,
       py: 2,
       transition: `all 0.3s ease-in-out`,
       "&:hover": {
@@ -257,7 +257,7 @@ const theme = merge(tailwind, {
       backgroundColor: `button_pink_bg`,
       cursor: `pointer`,
       alignSelf: `center`,
-      px: 3,
+      px: 4,
       py: 2,
       transition: `all 0.3s ease-in-out`,
       "&:hover": {
