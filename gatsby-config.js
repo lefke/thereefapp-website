@@ -44,6 +44,7 @@ module.exports = {
     {
       resolve: 'gatsby-plugin-theme-ui'
     },
+    'gatsby-plugin-postcss',
     {
       resolve: `@lekoarts/gatsby-theme-cara`,
       // See the theme's README for all available options
