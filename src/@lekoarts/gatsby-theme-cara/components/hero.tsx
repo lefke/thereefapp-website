@@ -12,7 +12,7 @@ const Hero = () => (
   <div id="home">
       <Content sx={{ minHeight: `90vh`, textAlign: `center` }} >
       <UpDownWide>
-        <img width="20%" height="auto" src="/nudibranch-cutout@2x.png" alt="nudibranch cutout" style={{position: "absolute", left: "0%", top: "6%", maxWidth: "180px" }} />
+        <img width="20%" height="auto" src="/nudibranch-cutout@2x.png" alt="nudibranch cutout" style={{position: "absolute", left: "0%", top: "12%", maxWidth: "180px" }} />
       </UpDownWide>
       <UpDown>
         <img width="35%" height="auto" src="/fish@2x.png" alt="fish floating in header" style={{position: "absolute", left: "65%", top: "55%", maxWidth: "350px" }} />
@@ -34,7 +34,7 @@ const Hero = () => (
       >
         Apply for early access
       </button>
-      <p className="microCopy" sx={{ variant: `texts.smaller`, color: 'color_divider_text',}}>Get early access and help shape the community.</p>
+      <p className="microCopy px-1" sx={{ variant: `texts.smaller`, color: 'color_divider_text' }}>Get early access and help shape the community.</p>
     </Content>
         <Divider
         bg="#ffffff"

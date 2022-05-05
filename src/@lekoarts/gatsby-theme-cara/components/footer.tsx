@@ -1,15 +1,14 @@
 /** @jsx jsx */
 import { Flex, useColorMode, jsx } from "theme-ui"
 import Divider from "../elements/divider"
-import { Link } from "gatsby"
 import PropTypes from "prop-types"
 import { UpDownWide, waveAnimation } from "../styles/animations"
 
 const Footer = ({ siteTitle, menuLinks }) => {
   const [colorMode, setColorMode] = useColorMode()
-  const isDark = colorMode === `dark`
+  const isDark = colorMode === `light`
   const toggleColorMode = (e: any) => {
-    setColorMode(isDark ? `light` : `dark`)
+    setColorMode(isDark ? `dark` : 'light')
   }
 
   return (
@@ -40,7 +39,7 @@ const Footer = ({ siteTitle, menuLinks }) => {
       </Divider>
       <Divider sx={{overflow: `hidden`, height: '40vh' }} >
         <UpDownWide>
-          <img width="80%" height="auto" src="/lips@2x.png"  alt="lips cutout" style={{position: "absolute", right: "0%", bottom: "10%", maxWidth: "320px" }} />
+          <img width="60%" height="auto" src="/lips@2x.png"  alt="lips cutout" style={{position: "absolute", right: "0%", bottom: "10%", maxWidth: "320px" }} />
         </UpDownWide>
       </Divider>
       <div>
@@ -55,9 +54,9 @@ const Footer = ({ siteTitle, menuLinks }) => {
                   padding: `1rem`,
                 }}
               >
-                <Link style={{ }} to={link.link}>
+                <a href={link.link}>
                   {link.name}
-                </Link>
+                </a>
               </li>
             ))}
           </ul>

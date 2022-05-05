@@ -112,7 +112,7 @@ const Header = ({ siteTitle, menuLinks, }) => {
           leaveFrom="transform scale-100 opacity-100"
           leaveTo="transform scale-95 opacity-0"
         >
-          <Menu.Items className="absolute right-2 top-20 mt-2 w-56 origin-top-right divide-y divide-gray-100 rounded-md bg-white shadow-lg  focus:outline-none p-1 border-0 bg-wave dark:bg-background">
+          <Menu.Items className="absolute right-2 top-20 mt-2 w-56 origin-top-right divide-y divide-gray-100 rounded-md bg-white shadow-lg  focus:outline-none p-1 border-0 dark:bg-background">
             {menuLinks.map(link => (
               <Menu.Item>
                 {({ active }) => (

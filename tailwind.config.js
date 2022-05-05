@@ -6,6 +6,15 @@ module.exports = {
   ],
   theme: {
     colors: {
+      transparent: 'transparent',
+      current: 'currentColor',
+      'white': '#ffffff',
+      'navy_night_anemone': '#1C0248',
+      'pink_clownfish': '#FFA4CA',
+      'blue_fishtank': '#30B7D5',
+      'red_goldfish': '#FF2D1D',
+      'yellow_turtle': '#FCD901',
+      /* cara theme color setup */
       'primary': '#FCD901',
       'secondary': '#1C0248',
       'text': '#1C0248',

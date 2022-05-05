@@ -1,5 +1,5 @@
 /** @jsx jsx */
-import { jsx } from "theme-ui"
+import { jsx, useColorMode } from "theme-ui"
 import Divider from "../elements/divider"
 import Inner from "../elements/inner-left-content"
 import Content from "../elements/content"
@@ -34,6 +34,7 @@ const MapProjects = () => (
           gridTemplateColumns: [`1fr`, `1fr`, `1fr`, `3fr 1fr`, `3fr 1fr`, `3fr 1fr`],
           h2:{ color: `color_divider_heading`,},
           color: 'color_divider_text',
+          p:{ color: 'color_divider_text'}
         }}>
         <div sx={{order: '0',}}>
           <MapProjectsMDX />
@@ -41,7 +42,7 @@ const MapProjects = () => (
               sx={{ variant: `buttons.blue`, ml: `0`, mt: 3, }}
               onClick={null}
               type="button"
-              aria-label="Toggle dark mode"
+              aria-label="Submit project"
           >
               Submit your project
           </button>

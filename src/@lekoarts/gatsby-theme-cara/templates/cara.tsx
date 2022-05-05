@@ -1,5 +1,4 @@
 import * as React from "react"
-//import { Parallax } from "@react-spring/parallax"
 import Layout from "../components/layout"
 import Hero from "../components/hero"
 import Mission from "../components/mission"
@@ -9,8 +8,15 @@ import Community from "../components/community"
 import People from "../components/people"
 import Team from "../components/team"
 import Contact from "../components/contact"
+import { useColorMode } from "theme-ui"
 
-const TheReefApp = () => (
+const TheReefApp = () => {
+  const [colorMode, setColorMode] = useColorMode()
+  const isDark = colorMode === `light`
+  const toggleColorMode = (e: any) => {
+    setColorMode(isDark ? `dark` : 'light')
+    }
+  return (
   <Layout>
     <div>
       <Hero  />
@@ -24,5 +30,6 @@ const TheReefApp = () => (
     </div>
   </Layout>
 )
+}
 
 export default TheReefApp

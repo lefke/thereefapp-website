@@ -25,7 +25,6 @@ const ProjectCard = ({ image, imageMobile, logo, description, location, price, i
         display: `grid`,
         gridGap: [2, 2, 3, 4],
         gridTemplateColumns: [`1fr`, `1fr`, ` 1fr`, `2fr 3fr`, `2fr 3fr`],
-        h2: { gridColumn: `-1/1` },
         textDecoration: `none`,
         borderRadius: `lg`,
         px: [2, 2, 2],
@@ -34,6 +33,14 @@ const ProjectCard = ({ image, imageMobile, logo, description, location, price, i
       "&:hover": {
         color: `#1C0248`,
         textDecoration: `none`,
+      },
+      h3: { 
+        gridColumn: `-1/1`,
+        fontSize: [1, 2, 2, 3, 4, 4],
+        lineHeight: [1.2, 1.2, 1.2, 1.2, 1.2, 1.2],
+      },
+      ul: {
+        listStyle: 'inside',
       },
       li: {
         color: `#1C0248`,
@@ -59,10 +66,10 @@ const ProjectCard = ({ image, imageMobile, logo, description, location, price, i
       />
     </div>
     <div>
-      <h4 sx={{ mt: [1,1,1,]}}>Join the global movement to save coral reefs. Sign up for a restoration dive.</h4>
+      <h3 sx={{ mt: [1,1,1,], fontWeight: 'bold' }}>Join the global movement to save coral reefs. Sign up for a restoration dive.</h3>
       <div>
-        <h4 sx={{ my: [1,1,1,]}}>{title}</h4>
-        <h5 sx={{ my: [1,1,1,]}}>{location}</h5>
+        <h4 sx={{ my: [1,1,1,], fontWeight: 'bold' }}>{title}</h4>
+        <h5 sx={{ my: [1,1,1,], fontWeight: 'bold' }}>{location}</h5>
         <p sx={{ opacity: 0.85, fontSize: [0, 0, 0, 0, 0, 0], fontWeight: `normal`,}}>{description}</p>
         <p sx={{ opacity: 0.85, fontSize: [0, 0, 0, 0, 0, 0], fontWeight: `normal`,}}>What's included:</p>
         <ul sx={{ variant: 'texts.smaller', opacity: 0.85, fontSize: [0, 0, 0, 0, 0, 0], fontWeight: `normal`,}}>

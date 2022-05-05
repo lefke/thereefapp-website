@@ -31,7 +31,7 @@ const People = () => (
             display: `grid`,
             gridGap: [2, 2, 2, 2],
             gridTemplateColumns: [`1fr`, `repeat(2, 2fr)`, `repeat(2, 2fr)`, `repeat(3, 2fr)`, `repeat(4, 2fr)`],
-            h2: { gridColumn: `-1/1`, color: `#FCD901`, },
+            h2: { gridColumn: `-1/1`, color: `#color_divider_heading`, },
             a: { color: `color_divider_text`, 
                 "&:hover": { color: 'color_divider_text'},
                 },
