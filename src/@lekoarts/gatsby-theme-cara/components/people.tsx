@@ -24,7 +24,7 @@ const People = () => (
     bg="color_divider_bg"
     sx={{ height: `100%`, width: `100%`, clipPath: `polygon(0 100px, 100% 0, 100% 100%, 0 100%)` }}
     />
-    <Content sx={{ minHeight: "70vh", pt: [`80px`, `200px`, `300px`, `300px`], pb: [`80px`, `100px`, `200px`, `200px`]}}>
+    <Content sx={{ minHeight: "70vh", pt: [`80px`, `120px`, `200px`, `300px`], pb: [`80px`, `100px`, `200px`, `200px`]}}>
       <Inner>
         <div
             sx={{

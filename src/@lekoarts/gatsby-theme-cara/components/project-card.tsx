@@ -66,7 +66,7 @@ const ProjectCard = ({ image, imageMobile, logo, description, location, price, i
       />
     </div>
     <div>
-      <h3 sx={{ mt: [1,1,1,], fontWeight: 'bold' }}>Join the global movement to save coral reefs. Sign up for a restoration dive.</h3>
+      <h3 sx={{ mt: [1,1,1,], fontWeight: 'bold' }}>Sign up for a restoration dive.</h3>
       <div>
         <h4 sx={{ my: [1,1,1,], fontWeight: 'bold' }}>{title}</h4>
         <h5 sx={{ my: [1,1,1,], fontWeight: 'bold' }}>{location}</h5>
