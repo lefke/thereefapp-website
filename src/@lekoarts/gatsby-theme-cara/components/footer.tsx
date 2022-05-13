@@ -6,9 +6,9 @@ import { UpDownWide, waveAnimation } from "../styles/animations"
 
 const Footer = ({ siteTitle, menuLinks }) => {
   const [colorMode, setColorMode] = useColorMode()
-  const isDark = colorMode === `light`
+  const isDark = colorMode === `dark`
   const toggleColorMode = (e: any) => {
-    setColorMode(isDark ? `dark` : 'light')
+    setColorMode(isDark ? 'light' : `dark` )
   }
 
   return (

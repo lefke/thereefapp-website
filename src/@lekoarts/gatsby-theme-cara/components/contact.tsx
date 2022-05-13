@@ -11,9 +11,9 @@ import ContactMDX from "../sections/contact"
 const Contact = () => {
 
   const [colorMode, setColorMode] = useColorMode()
-  const isDark = colorMode === `light`
+  const isDark = colorMode === `dark`
   const toggleColorMode = (e: any) => {
-    setColorMode(isDark ? `dark` : 'light')
+    setColorMode(isDark ? 'light' : `dark` )
     }
 
   return (
@@ -57,9 +57,9 @@ const Contact = () => {
             }}
         >
             {isDark ? (
-            <img width="50%" height="auto" src="/The reef app long logo - yellow@2x.png" alt="The Reef App Logo" />
-            ) : (
             <img width="50%" height="auto" src="/The reef app long logo - yellow-darktheme@2x.png" alt="The Reef App Logo" />
+            ) : (
+            <img width="50%" height="auto" src="/The reef app long logo - yellow@2x.png" alt="The Reef App Logo" />
             )}
       </Flex>
 
@@ -69,7 +69,7 @@ const Contact = () => {
         type="button"
         aria-label="Toggle dark mode"
       >
-        {isDark ? `night dive` : `reef dive` }
+        {isDark ? `reef dive` : `night dive` }
       </button>
       </Inner>
     </Content>
