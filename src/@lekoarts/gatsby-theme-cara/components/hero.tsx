@@ -26,14 +26,16 @@ const Hero = () => (
         >
         <Intro />
       </Inner>
-      <button
+      <a
         sx={{ variant: `buttons.yellow`, mt: 3 }}
-        onClick={null}
+        href="http://thereefapp-25633844.hubspotpagebuilder.eu/the-reef-app-early-access"
+        target="_blank"
         type="button"
-        aria-label="Toggle dark mode"
+        role="link"
+        aria-label="Apply for early access"
       >
         Apply for early access
-      </button>
+      </a>
       <p className="microCopy px-1" sx={{ variant: `texts.smaller`, color: 'color_divider_text' }}>Get early access and help shape the community.</p>
     </Content>
         <Divider

@@ -63,14 +63,16 @@ const Footer = ({ siteTitle, menuLinks }) => {
         </nav>
       </div>
 
-      <button
+      <a
         sx={{ variant: `buttons.pink`, mt: 3 }}
-        onClick={null}
+        href="http://thereefapp-25633844.hubspotpagebuilder.eu/the-reef-app-early-access"
+        target="_blank"
         type="button"
-        aria-label="Toggle dark mode"
+        role="link"
+        aria-label="Apply for early access"
       >
         Apply for early access
-      </button>
+      </a>
       <p sx={{ mb: 5 }}>Copyright &copy; {new Date().getFullYear()}. All rights reserved.</p>
     </Flex>
   )

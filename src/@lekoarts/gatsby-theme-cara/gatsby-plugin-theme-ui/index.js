@@ -198,6 +198,7 @@ const theme = merge(tailwind, {
   buttons: {
     toggle: {
       display: `block`, 
+      width: 'fit-content',
       mx: `auto`,
       fontSize: [ 1, 1, 1, 2, 2, 2],
       fontWeight: `semibold`,
@@ -218,6 +219,7 @@ const theme = merge(tailwind, {
     },
     yellow: {
       display: `block`, 
+      width: 'fit-content',
       mx: `auto`,
       fontSize: [ 1, 1, 1, 2, 2, 2],
       fontWeight: `semibold`,
@@ -238,6 +240,7 @@ const theme = merge(tailwind, {
     },
     blue: {
       display: `block`, 
+      width: 'fit-content',
       mx: `auto`,
       fontSize: [ 1, 1, 1, 2, 2, 2],
       fontWeight: `semibold`,
@@ -258,6 +261,7 @@ const theme = merge(tailwind, {
     },
     pink: {
       display: `block`, 
+      width: 'fit-content',
       mx: `auto`,
       fontSize: [ 1, 1, 1, 2, 2, 2],
       fontWeight: `semibold`,

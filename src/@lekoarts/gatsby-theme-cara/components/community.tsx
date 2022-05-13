@@ -40,14 +40,16 @@ const MapProjects = () => (
           <img width="50%" height="auto" src="/dummy-restoration-profile-mobile@3x.png" alt="The Reef App restoration profile screen" sx={{ display: desktopHidden, boxShadow: `lg`, mx: 'auto', my: 4 }} />
         <div sx={{order: [-1, -1, -1, 0,0], pr:[0,0,0,0,0,6] }}>
             <CommunityMDX />
-            <button
+            <a
                 sx={{ variant: `buttons.yellow`, ml: `0`, mt: 3 }}
-                onClick={null}
+                href="http://thereefapp-25633844.hubspotpagebuilder.eu/the-reef-app-early-access"
+                target="_blank"
                 type="button"
-                aria-label="Toggle dark mode"
+                role="link"
+                aria-label="Apply for early access"
             >
                 Apply for early access
-            </button>
+            </a>
             <p sx={{ variant: `p.microCopy.p`}}>Get early access and help shape the community.</p>
           </div>
       </Inner>

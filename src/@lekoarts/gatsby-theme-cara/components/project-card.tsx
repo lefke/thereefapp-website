@@ -76,14 +76,16 @@ const ProjectCard = ({ image, imageMobile, logo, description, location, price, i
           {children}
         </ul>
         <h4 sx={{ my: [1,1,1,]}}>{price}</h4>
-        <button
+        <a
           sx={{ variant: `buttons.pink`, mt: 3, ml: 0, }}
-          onClick={null}
+          href="http://thereefapp-25633844.hubspotpagebuilder.eu/the-reef-app-conservation-project-interest"
+          target="_blank"
           type="button"
-          aria-label="Toggle dark mode"
+          role="link"
+          aria-label="Join waitlist"
         >
         Join waitlist
-      </button>
+      </a>
       </div>
     </div>
   </a>
