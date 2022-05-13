@@ -7,6 +7,7 @@ import Svg from "./svg"
 import { UpDown, UpDownWide, waveAnimation } from "../styles/animations"
 // @ts-ignore
 import ContactMDX from "../sections/contact"
+import { OutboundLink } from "gatsby-plugin-google-gtag"
 
 const Contact = () => {
 
