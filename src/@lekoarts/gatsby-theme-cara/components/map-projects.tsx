@@ -9,6 +9,7 @@ import { UpDown, UpDownWide } from "../styles/animations"
 // @ts-ignore
 import MapProjectsMDX from "../sections/mapProjects"
 import { withAssetPrefix, navigate } from "gatsby"
+import SimpleMap from "../components/map-embed"
 
 const MapProjects = () => (
   <div style={{
@@ -49,9 +50,20 @@ const MapProjects = () => (
               Submit your project
           </a>
         </div>
-          <img width="100%" height="auto" src="/dummy-map-screen@3x.png" alt="The Reef App project map screen" sx={{ display: hidden, maxWidth: '420px', boxShadow: `lg`, right: '0', my: 4 }} />
-          <img width="50%" height="auto" src="/dummy-map-screen-mobile@3x.png" alt="The Reef App project map screen" sx={{ display: desktopHidden, boxShadow: `lg`, mx: 'auto', my: 4 }} />
+      {/*    <img width="100%" height="auto" src="/dummy-map-screen@3x.png" alt="The Reef App project map screen" sx={{ display: hidden, maxWidth: '420px', boxShadow: `lg`, right: '0', my: 4 }} />
+          <img width="50%" height="auto" src="/dummy-map-screen-mobile@3x.png" alt="The Reef App project map screen" sx={{ display: desktopHidden, boxShadow: `lg`, mx: 'auto', my: 4 }} />*/}
       </Inner>
+      <div
+        sx={{
+          width: '80%',
+          my: 'auto',
+          mt: '44px',
+        } }
+      >
+        <SimpleMap zoom={4} center={{ lat: 14.569598294797048, lng: -75.55183377214301,}} />
+      </div>
+          <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1SK_swcGDs8Tse2tllBsrEwUTQerV7pNH&ehbc=2E312F" width="640" height="480"></iframe>
+        {/*}  <iframe width="100%" height="450" loading="lazy" src="https://www.google.com/maps/embed/v1/view?zoom=4&center=21.4691%2C-78.6569&key=AIzaSyC78kNdin7gmCk5lDihLo1bbsmvmu1fve8"></iframe> */}
     </Content>
     <Divider
     bg="#ffffff"

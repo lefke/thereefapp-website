@@ -24,7 +24,7 @@ const TheReefApp = () => {
       <Mission />
       <MapProjects />
       <Community />
-      <People />
+    {/*  <People /> */}
       <Team />
       <Contact />
     </div>

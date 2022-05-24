@@ -128,5 +128,11 @@ module.exports = {
       options: {
       }
     },
+    {
+      resolve: "google-map-react",
+      options: {
+        apiKey: process.env.GMAPS_ID,
+      }
+    },
   ].filter(Boolean),
 }

@@ -19,7 +19,6 @@ const People = () => (
     }}
     sx={{ mt: [`-100px`] }}
   >
-    <div id="section_team"></div>
     <Divider
     bg="color_divider_bg"
     sx={{ height: `100%`, width: `100%`, clipPath: `polygon(0 100px, 100% 0, 100% 100%, 0 100%)` }}

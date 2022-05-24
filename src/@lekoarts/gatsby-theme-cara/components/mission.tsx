@@ -28,7 +28,6 @@ const Mission = () => (
         gridGap: [1, 1, 2, 2],
         gridTemplateColumns: [`1fr`, `1fr`, `1fr`, `repeat(2, 1fr)`],
         h2: { gridColumn: `-1/1` },
-        mt: `-50px`, 
         }}
       >
         <img width="50%" height="auto" src="/indonesia_warren@2x.png"  alt="collage of sunscreen on coral crossed out" style={{ zIndex: "-99", maxWidth: '340px' }} />

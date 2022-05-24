@@ -17,10 +17,7 @@ type ProjectCardProps = {
 }
 
 const ProjectCard = ({ image, imageMobile, logo, description, location, price, imageAlt, link, title, children, bg }: ProjectCardProps) => (
-  <a
-    href={link}
-    target="_blank"
-    rel="noreferrer noopener"
+  <div
     sx={{
         display: `grid`,
         gridGap: [2, 2, 3, 4],
@@ -66,7 +63,7 @@ const ProjectCard = ({ image, imageMobile, logo, description, location, price, i
       />
     </div>
     <div>
-      <h3 sx={{ mt: [1,1,1,], fontWeight: 'bold' }}>Sign up for a restoration dive.</h3>
+      <h3 sx={{ mt: [1,1,1,], fontWeight: 'bold' }}>Sign up for a restoration dive</h3>
       <div>
         <h4 sx={{ my: [1,1,1,], fontWeight: 'bold' }}>{title}</h4>
         <h5 sx={{ my: [1,1,1,], fontWeight: 'bold' }}>{location}</h5>
@@ -75,7 +72,7 @@ const ProjectCard = ({ image, imageMobile, logo, description, location, price, i
         <ul sx={{ variant: 'texts.smaller', opacity: 0.85, fontSize: [0, 0, 0, 0, 0, 0], fontWeight: `normal`,}}>
           {children}
         </ul>
-        <h4 sx={{ my: [1,1,1,]}}>{price}</h4>
+        {/*<h4 sx={{ my: [1,1,1,]}}>{price}</h4>*/}
         <a
           sx={{ variant: `buttons.pink`, mt: 3, ml: 0, }}
           href="http://thereefapp-25633844.hubspotpagebuilder.eu/the-reef-app-conservation-project-interest"
@@ -88,7 +85,7 @@ const ProjectCard = ({ image, imageMobile, logo, description, location, price, i
       </a>
       </div>
     </div>
-  </a>
+  </div>
 )
 
 export default ProjectCard

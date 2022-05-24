@@ -29,8 +29,8 @@ const MapProjects = () => (
         </UpDown>
         <UpDownWide>
         </UpDownWide>
-        <img width="55%" height="auto" src="/people-bubbles@2x.png"  alt="divers working on frame" style={{position: "absolute", left: "0%", top: "92%", maxWidth: "520px"}} />
-      <Inner
+{/*        <img width="55%" height="auto" src="/people-bubbles@2x.png"  alt="divers working on frame" style={{position: "absolute", left: "0%", top: "92%", maxWidth: "520px"}} />
+*/}      <Inner
         sx={{
           display: `grid`,
           gridGap: [1, 1, 3, 4],

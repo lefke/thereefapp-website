@@ -39,6 +39,7 @@ const Projects = () => (
           </div>
             <div>
                 <img width="40%" height="auto" src="/parrot-fish@2x.png"  alt="parrot fish cutout" style={{ maxWidth: "380px", zIndex: "-99", position: "relative", left: "-20%", top: "14%", margin: "30px 0 -10%"}} />
+                
                 <div
                     sx={{
                         bg: "#ffffff",
