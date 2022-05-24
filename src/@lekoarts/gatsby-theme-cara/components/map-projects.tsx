@@ -8,7 +8,7 @@ import Svg from "./svg"
 import { UpDown, UpDownWide } from "../styles/animations"
 // @ts-ignore
 import MapProjectsMDX from "../sections/mapProjects"
-import { withAssetPrefix, navigate } from "gatsby"
+import { withAssetPrefix, navigate, Link } from "gatsby"
 import SimpleMap from "../components/map-embed"
 
 const MapProjects = () => (
@@ -39,15 +39,15 @@ const MapProjects = () => (
         }}>
         <div sx={{order: '0',}}>
           <MapProjectsMDX />
-          <a
+          <Link
               sx={{ variant: `buttons.blue`, ml: `0`, mt: 3, }}
-              href="http://thereefapp-25633844.hubspotpagebuilder.eu/the-reef-app-submit-project"
+              to="/submit-project"
               target="_blank"
               role="link"
               aria-label="Submit project"
           >
               Submit your project
-          </a>
+          </Link>
         </div>
       {/*    <img width="100%" height="auto" src="/dummy-map-screen@3x.png" alt="The Reef App project map screen" sx={{ display: hidden, maxWidth: '420px', boxShadow: `lg`, right: '0', my: 4 }} />
           <img width="50%" height="auto" src="/dummy-map-screen-mobile@3x.png" alt="The Reef App project map screen" sx={{ display: desktopHidden, boxShadow: `lg`, mx: 'auto', my: 4 }} />*/}
