@@ -1,6 +1,4 @@
 import * as React from "react"
-import { Link } from "gatsby"
-import { Themed } from "theme-ui"
 import Layout from "../@lekoarts/gatsby-theme-cara/components/layout"
 import Divider from "../@lekoarts/gatsby-theme-cara/elements/divider"
 import { UpDown, UpDownWide } from "../@lekoarts/gatsby-theme-cara/styles/animations"

@@ -126,13 +126,25 @@ module.exports = {
     {
       resolve: "gatsby-plugin-anchor-links",
       options: {
-      }
+      },
     },
     {
       resolve: "google-map-react",
       options: {
         apiKey: process.env.GMAPS_ID,
-      }
+      },
+    },{
+    resolve: `gatsby-source-airtable`,
+    options: {
+      apiKey: process.env.AIRTABLE_ID, // may instead specify via env, see below
+      concurrency: 5, // default, see using markdown and attachments for more information
+      tables: [
+        {
+          baseId: `appP6ja7vhGsjfxWE`,
+          tableName: `Projects`,
+        },
+      ],
     },
+  },
   ].filter(Boolean),
 }

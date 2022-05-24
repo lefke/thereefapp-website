@@ -7,7 +7,7 @@ import Content from "../elements/content"
 // @ts-ignore
 import TestimonialsMDX from "../components/feature-testimonials"
 import FeaturedProject from "../components/feature-project"
-import { withAssetPrefix } from "gatsby"
+import { withAssetPrefix, Link } from "gatsby"
 
 const Projects = () => (
   <div style={{
@@ -53,7 +53,7 @@ const Projects = () => (
                     <FeaturedProject />
                 </div>
             </div>
-            <p sx={{ textAlign: `center` }}>More projects coming soon! <a href="http://thereefapp-25633844.hubspotpagebuilder.eu/the-reef-app-submit-project" target="_blank">Get your project featured here</a></p>
+            <p sx={{ textAlign: `center` }}>More projects coming soon! <Link to="/submit-project">Get your project featured here</Link></p>
       </Inner>
     </Content>
   </div>
