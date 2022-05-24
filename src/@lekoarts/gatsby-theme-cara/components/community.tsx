@@ -9,6 +9,7 @@ import { UpDown, UpDownWide } from "../styles/animations"
 // @ts-ignore
 import CommunityMDX from "../sections/community"
 import { withAssetPrefix } from "gatsby"
+import { StaticImage, } from "gatsby-plugin-image"
 
 const MapProjects = () => (
   <div style={{
@@ -52,7 +53,7 @@ const MapProjects = () => (
       </Inner>
 
     </Content>
-              <img width="55%" height="auto" src="/people-bubbles.png"  alt="divers working on frame" style={{position: "relative", maxWidth: "500px", marginTop: "20px", }} />
+        <img  src={"/people-bubbles.png"}  alt="divers working on frame" style={{position: "relative", maxWidth: "500px", marginTop: "20px", width: '55%', height: 'auto' }} />
         <Divider
         bg="#ffffff"
         sx={{ position: `initial`, justifySelf: `flex-end`, height: `100px`, width: `100%`, clipPath: `polygon(0 100%, 100% 0%, 100% 100%)` }}

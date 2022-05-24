@@ -42,7 +42,16 @@ module.exports = {
   },
   plugins: [
     {
-      resolve: 'gatsby-plugin-theme-ui'
+      resolve: 'gatsby-plugin-theme-ui',
+    },
+    {
+      resolve: `gatsby-plugin-image`,
+    },
+    {
+      resolve: `gatsby-plugin-sharp`,
+    },
+    {
+      resolve: `gatsby-transformer-sharp`, // Needed for dynamic images
     },
     'gatsby-plugin-postcss',
     {
