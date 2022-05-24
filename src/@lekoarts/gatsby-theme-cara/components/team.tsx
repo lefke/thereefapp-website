@@ -26,7 +26,7 @@ const Team = () => (
     bg="#ffffff"
     sx={{ height: `100%`, width: `100%`, clipPath: `polygon(0 0, 100% 100px, 100% 100%, 0 100%)` }}
     />
-    <Content sx= {{ minHeight: `65vh`, mt: [`200px`] }}>
+    <Content sx= {{ minHeight: `65vh`, mt: [`20px`] }}>
         <UpDown>
         </UpDown>
         <UpDownWide>

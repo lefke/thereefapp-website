@@ -29,7 +29,6 @@ const MapProjects = () => (
         </UpDown>
         <UpDownWide>
         </UpDownWide>
-        <img width="55%" height="auto" src="/people-bubbles@2x.png"  alt="divers working on frame" style={{position: "absolute", left: "0%", top: "78%", maxWidth: "500px"}} />
       <Inner
         sx={{
           display: `grid`,
@@ -54,7 +53,9 @@ const MapProjects = () => (
             <p sx={{ variant: `p.microCopy.p`}}>Get early access and help shape the community.</p>
           </div>
       </Inner>
+
     </Content>
+              <img width="55%" height="auto" src="/people-bubbles@2x.png"  alt="divers working on frame" style={{position: "relative", maxWidth: "500px", marginTop: "20px", }} />
         <Divider
         bg="#ffffff"
         sx={{ position: `initial`, justifySelf: `flex-end`, height: `100px`, width: `100%`, clipPath: `polygon(0 100%, 100% 0%, 100% 100%)` }}
