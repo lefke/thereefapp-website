@@ -40,14 +40,6 @@ const Team = () => (
       >
           <div sx={{ maxWidth: '80%',}}>
             <TeamMDX />
-          {/*  <button
-              sx={{ variant: `buttons.blue`, mt: 3, ml: 0 }}
-              onClick={null}
-              type="button"
-              aria-label="Toggle dark mode"
-            >
-              Contact us
-            </button> */}
           </div>
           <img width="100%" height="auto" src="/UN-global-goals@3x.png" alt="UN Goals for sustainable development" sx={{ display: hidden, maxWidth: '220px', boxShadow: `lg`, }} />
           <img width="80%" height="auto" src="/UN-global-goals-horizontal@3x.png" alt="UN Goals for sustainable development" sx={{ display: desktopHidden, boxShadow: `lg`, }} />

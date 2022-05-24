@@ -104,7 +104,7 @@ const theme = merge(tailwind, {
   },
   links: {
     nav: {
-      fontWeight: 400,
+      fontWeight: 700,
       color: 'nav_links',
     }
   },
@@ -122,6 +122,7 @@ const theme = merge(tailwind, {
         color: `primary`,
         textDecoration: `none`,
         transition: `all 0.3s ease-in-out`,
+        fontWeight: 700,
         "&:hover": {
           color: `primary`,
           textDecoration: `underline`,

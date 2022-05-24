@@ -28,10 +28,11 @@ const Mission = () => (
         gridGap: [1, 1, 2, 2],
         gridTemplateColumns: [`1fr`, `1fr`, `1fr`, `repeat(2, 1fr)`],
         h2: { gridColumn: `-1/1` },
+        mb: [4,4,4,4],
         }}
       >
-        <img width="50%" height="auto" src="/indonesia_warren@2x.png"  alt="collage of sunscreen on coral crossed out" style={{ zIndex: "-99", maxWidth: '340px' }} />
-        <img width="60%" height="auto" src="/join-the-movement@2x.png"  alt="collage of sunscreen on coral crossed out" style={{ alignSelf: "flex-end", justifySelf: "flex-end", zIndex: "-99", maxWidth: '440px' }} />
+        <img width="50%" height="auto" src="/indonesia_warren.png"  alt="collage of warren reef indonesia" style={{ zIndex: "-99", maxWidth: '340px' }} />
+        <img width="60%" height="auto" src="/join-the-movement@2x.png"  alt="collage of join the movement badge" style={{ alignSelf: "flex-end", justifySelf: "flex-end", zIndex: "-99", maxWidth: '440px' }} />
       </div>
     <Content
         sx={{ justifyContent: `flex-start`, minHeight: [`25vh`, `25vh`], mb: `100px` }}
@@ -42,7 +43,7 @@ const Mission = () => (
             variant: `headings.smaller`,
             zIndex: "99",
             textAlign: `center`,
-            mb: [`4rem`],
+            mb: [3,4,5,6],
             h3: {
             color: `#1C0248`,
             },

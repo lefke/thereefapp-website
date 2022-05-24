@@ -22,7 +22,7 @@ const Contact = () => {
   <div id="section_contact">
     <Divider sx={{overflow: `hidden`}} >
       <UpDown>
-        <img width="40%" height="auto" src="/angel-fish@2x.png"  alt="angel fish cutout" style={{position: "absolute", left: "0%", top: "4%", maxWidth: "260px" }} />
+        <img width="40%" height="auto" src="/angel-fish.png"  alt="angel fish cutout" style={{position: "absolute", left: "0%", top: "4%", maxWidth: "260px" }} />
       </UpDown>
     </Divider>
     <Content 

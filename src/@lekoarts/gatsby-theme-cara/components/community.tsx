@@ -35,9 +35,6 @@ const MapProjects = () => (
           gridGap: [1, 1, 3, 4],
           gridTemplateColumns: [`1fr`, `1fr`,  `1fr`, `1fr 3fr`, `1fr 3fr`, `1fr 3fr`],
         }}>
-       {/*   <img width="100%" height="auto" src="/dummy-restoration-profile@3x.png" alt="The Reef App restoration profile screen" sx={{ display: hidden, maxWidth: '400px', boxShadow: `lg`, left: '0', my: 4 }} />
-          <img width="50%" height="auto" src="/dummy-restoration-profile-mobile@3x.png" alt="The Reef App restoration profile screen" sx={{ display: desktopHidden, boxShadow: `lg`, mx: 'auto', my: 4 }} />
-      */} 
           <div></div>
           <div sx={{order: [-1, -1, -1, 0,0], pr:[0,0,0,0,0,6] }}>
             <CommunityMDX />
@@ -55,7 +52,7 @@ const MapProjects = () => (
       </Inner>
 
     </Content>
-              <img width="55%" height="auto" src="/people-bubbles@2x.png"  alt="divers working on frame" style={{position: "relative", maxWidth: "500px", marginTop: "20px", }} />
+              <img width="55%" height="auto" src="/people-bubbles.png"  alt="divers working on frame" style={{position: "relative", maxWidth: "500px", marginTop: "20px", }} />
         <Divider
         bg="#ffffff"
         sx={{ position: `initial`, justifySelf: `flex-end`, height: `100px`, width: `100%`, clipPath: `polygon(0 100%, 100% 0%, 100% 100%)` }}

@@ -14,10 +14,7 @@ type TestimonialCardProps = {
 }
 
 const TestimonialCard = ({ image, imageAlt, link, title, subtitle, children, bg, hiddenMobile=false }: TestimonialCardProps) => (
-  <a
-    href={link}
-    target="_blank"
-    rel="noreferrer noopener"
+  <div
     sx={{
       display: hiddenMobile ? hidden : `block`,
       width: `100%`,
@@ -36,9 +33,8 @@ const TestimonialCard = ({ image, imageAlt, link, title, subtitle, children, bg,
     }}
   >
   
-    <img width="100%" height="auto" src={image} alt={imageAlt}
+    <img width="74%" height="auto" src={image} alt={imageAlt}
         sx={{
-            width: '80%',
             mx: 'auto',
             mb: [2, 2],
             borderRadius: '50%',
@@ -67,7 +63,7 @@ const TestimonialCard = ({ image, imageAlt, link, title, subtitle, children, bg,
       {subtitle}
     </div>
     <div sx={{ opacity: 0.85, fontSize: [0, 0, 0, 0, 0, 0], lineHeight: [1, 1, 1, 1, 1, 1], }}>{children}</div>
-  </a>
+  </div>
 )
 
 export default TestimonialCard

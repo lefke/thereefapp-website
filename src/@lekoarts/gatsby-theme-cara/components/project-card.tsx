@@ -55,7 +55,7 @@ const ProjectCard = ({ image, imageMobile, logo, description, location, price, i
             display: desktopHidden,
           }}
       />
-      <img width="120px" height="auto" src={logo}
+      <img width="120px" height="auto" src={logo} alt="Featured project logo"
           sx={{
             mt: '-40px',
             mx: 'auto',
@@ -63,13 +63,12 @@ const ProjectCard = ({ image, imageMobile, logo, description, location, price, i
       />
     </div>
     <div>
-      <h3 sx={{ mt: [1,1,1,], fontWeight: 'bold' }}>Sign up for a restoration dive</h3>
       <div>
-        <h4 sx={{ my: [1,1,1,], fontWeight: 'bold' }}>{title}</h4>
-        <h5 sx={{ my: [1,1,1,], fontWeight: 'bold' }}>{location}</h5>
-        <p sx={{ opacity: 0.85, fontSize: [0, 0, 0, 0, 0, 0], fontWeight: `normal`,}}>{description}</p>
+        <h4 sx={{ my: [1,1,1,], fontWeight: 'bold', mb: [1,1,1,1] }}>{title}</h4>
+        <h5 sx={{ my: [1,1,1,], fontWeight: 'bold', mb: [3,3,3,3] }}>{location}</h5>
+        <p sx={{ opacity: 0.85, fontSize: [0, 0, 0, 0, 0, 0], fontWeight: `normal`, mb: [3,3,3,3]}}>{description}</p>
         <p sx={{ opacity: 0.85, fontSize: [0, 0, 0, 0, 0, 0], fontWeight: `normal`,}}>What's included:</p>
-        <ul sx={{ variant: 'texts.smaller', opacity: 0.85, fontSize: [0, 0, 0, 0, 0, 0], fontWeight: `normal`,}}>
+        <ul sx={{ variant: 'texts.smaller', opacity: 0.85, fontSize: [0, 0, 0, 0, 0, 0], fontWeight: `normal`, mb: [4,4,4,4]}}>
           {children}
         </ul>
         {/*<h4 sx={{ my: [1,1,1,]}}>{price}</h4>*/}

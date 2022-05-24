@@ -25,9 +25,9 @@ const MapProjects = () => (
     sx={{ height: `100%`, width: `100%`, clipPath: `polygon(0 0, 100% 100px, 100% 100%, 0 100%)` }}
     />
     <Content sx={{ minHeight: "70vh", mt: [`100px`, `200px`, `300px`, `300px`] }}>
-        <img width="60%" height="auto" src="/platform-project@2x.png" alt="coral restoration underwater platform" style={{marginTop: '-70px', position: "absolute", left: "10%", top: "0%", maxWidth: "700px" }} />
+        <img width="60%" height="auto" src="/platform-project.png" alt="coral restoration underwater platform" style={{marginTop: '-70px', position: "absolute", left: "10%", top: "0%", maxWidth: "700px" }} />
         <UpDownWide>
-            <img width="60%" height="auto" src="/shoal-collage@2x.png"  alt="collage of shoal of fish" style={{position: "absolute", right: "0%", top: "54%", maxWidth: "350px"}} />        </UpDownWide>
+            <img width="60%" height="auto" src="/shoal-collage.png"  alt="collage of shoal of fish" style={{position: "absolute", right: "0%", top: "54%", maxWidth: "350px"}} />        </UpDownWide>
       <Inner
         sx={{
           display: `grid`,
@@ -49,8 +49,6 @@ const MapProjects = () => (
               Submit your project
           </Link>
         </div>
-      {/*    <img width="100%" height="auto" src="/dummy-map-screen@3x.png" alt="The Reef App project map screen" sx={{ display: hidden, maxWidth: '420px', boxShadow: `lg`, right: '0', my: 4 }} />
-          <img width="50%" height="auto" src="/dummy-map-screen-mobile@3x.png" alt="The Reef App project map screen" sx={{ display: desktopHidden, boxShadow: `lg`, mx: 'auto', my: 4 }} />*/}
       </Inner>
       <div
         sx={{

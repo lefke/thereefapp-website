@@ -99,7 +99,7 @@ const Header = ({ siteTitle, menuLinks, }) => {
       <Menu>
             {({ open }) => (
           <>
-        <Menu.Button className={`absolute right-2 top-2 rounded-md px-4 py-2 text-sm font-medium text-white hover:bg-opacity-30 focus:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-opacity-75 md:hidden text-right`}>
+        <Menu.Button className={`absolute right-2 top-2 rounded-md px-4 py-2 text-sm font-medium text-white hover:bg-opacity-30 focus:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-opacity-75 md:hidden text-right`} >
           
             {open ? [<Svg icon="close" width={8} color="wave" left="" right="0" top="1" relativePosition />] : [<Svg icon="hamburger" width={8} color="wave"  right="" left="0" top="2" relativePosition />]}
         </Menu.Button>
