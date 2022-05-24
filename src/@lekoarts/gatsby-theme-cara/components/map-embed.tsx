@@ -8,6 +8,8 @@ type SimpleMapProps = {
       lng: number,
     },
     zoom: number,
+    height: string,
+    width: string,
 }
 
 const AnyReactComponent = ({ text }) => <div>{text}</div>
@@ -19,13 +21,15 @@ class SimpleMap extends React.Component<SimpleMapProps> {
       lng: -75.55183377214301,
     },
     zoom: 4,
+    height: '65vh',
+    width: '100%',
   };
 
 
   render() {
     return (
       // Important! Always set the container height explicitly
-      <div style={{ height: '65vh', width: '100%' }}>
+      <div style={{ height: this.props.height, width: this.props.width }}>
         <GoogleMapReact
           bootstrapURLKeys={{ key: process.env.GMAPS_ID }}
           defaultCenter={this.props.center}

@@ -6,6 +6,7 @@ import Svg from "../@lekoarts/gatsby-theme-cara/components/svg"
 import Seo from "../@lekoarts/gatsby-theme-cara/components/seo"
 import Content from "../@lekoarts/gatsby-theme-cara/elements/content"
 import Inner from "../@lekoarts/gatsby-theme-cara/elements/inner"
+import SimpleMap from "../@lekoarts/gatsby-theme-cara/components/map-embed"
 
 const SubmitProject = () => (
   <Layout>
@@ -41,7 +42,8 @@ const SubmitProject = () => (
       </Divider>
       <Content sx={{ variant: `texts.bigger` }} >
         <Inner>
-          <iframe title="Submit a project to be added to the map" class="airtable-embed" src="https://airtable.com/embed/shrj3MleacnIqf3hS?backgroundColor=red" frameborder="0" onmousewheel="" width="100%" height="1778" sx="background: transparent; border: 1px solid #ccc;"></iframe>
+        <SimpleMap zoom={4} center={{ lat: 14.569598294797048, lng: -75.55183377214301,}} width={'100%'} height={'50vh'} />
+          <iframe title="Submit a project to be added to the map" class="airtable-embed" src="https://airtable.com/embed/shrj3MleacnIqf3hS?backgroundColor=red" frameborder="0" onmousewheel="" width="100%" height="1790" sx="background: transparent; border: 1px solid #ccc;"></iframe>
         </Inner>
       </Content>
     </div>
