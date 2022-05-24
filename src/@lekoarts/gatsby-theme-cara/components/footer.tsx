@@ -67,7 +67,6 @@ const Footer = ({ siteTitle, menuLinks }) => {
         sx={{ variant: `buttons.pink`, mt: 3 }}
         href="http://thereefapp-25633844.hubspotpagebuilder.eu/the-reef-app-early-access"
         target="_blank"
-        type="button"
         role="link"
         aria-label="Apply for early access"
       >

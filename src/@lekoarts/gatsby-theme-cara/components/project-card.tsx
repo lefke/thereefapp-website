@@ -77,7 +77,6 @@ const ProjectCard = ({ image, imageMobile, logo, description, location, price, i
           sx={{ variant: `buttons.pink`, mt: 3, ml: 0, }}
           href="http://thereefapp-25633844.hubspotpagebuilder.eu/the-reef-app-conservation-project-interest"
           target="_blank"
-          type="button"
           role="link"
           aria-label="Join waitlist"
         >

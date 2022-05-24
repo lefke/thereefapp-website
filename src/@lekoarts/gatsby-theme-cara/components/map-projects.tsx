@@ -43,7 +43,6 @@ const MapProjects = () => (
               sx={{ variant: `buttons.blue`, ml: `0`, mt: 3, }}
               href="http://thereefapp-25633844.hubspotpagebuilder.eu/the-reef-app-submit-project"
               target="_blank"
-              type="button"
               role="link"
               aria-label="Submit project"
           >
