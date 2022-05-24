@@ -43,7 +43,7 @@ const SubmitProject = () => (
       <Content sx={{ variant: `texts.bigger` }} >
         <Inner>
         <SimpleMap zoom={4} center={{ lat: 14.569598294797048, lng: -75.55183377214301,}} width={'100%'} height={'50vh'} />
-          <iframe title="Submit a project to be added to the map" class="airtable-embed" src="https://airtable.com/embed/shrj3MleacnIqf3hS?backgroundColor=red" frameborder="0" onmousewheel="" width="100%" height="1790" sx="background: transparent; border: 1px solid #ccc;"></iframe>
+          <iframe title="Submit a project to be added to the map" class="airtable-embed" src="https://airtable.com/embed/shrj3MleacnIqf3hS?backgroundColor=red" frameborder="0" onmousewheel="" width="100%" height="1790" style={{background: 'transparent', border: '1px solid #ccc', marginTop: '20px', borderRadius: '20px'}}></iframe>
         </Inner>
       </Content>
     </div>
