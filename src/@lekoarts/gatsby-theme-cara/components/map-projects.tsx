@@ -63,7 +63,6 @@ const MapProjects = () => (
         <SimpleMap zoom={4} center={{ lat: 14.569598294797048, lng: -75.55183377214301,}} />
       </div>
           <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1SK_swcGDs8Tse2tllBsrEwUTQerV7pNH&ehbc=2E312F" width="640" height="480"></iframe>
-        {/*}  <iframe width="100%" height="450" loading="lazy" src="https://www.google.com/maps/embed/v1/view?zoom=4&center=21.4691%2C-78.6569&key=AIzaSyC78kNdin7gmCk5lDihLo1bbsmvmu1fve8"></iframe> */}
     </Content>
     <Divider
     bg="#ffffff"
