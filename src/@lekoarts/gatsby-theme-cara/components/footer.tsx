@@ -19,7 +19,7 @@ const Footer = ({ siteTitle, menuLinks }) => {
             sx={{
               position: `relative`,
               height: `full`,
-              svg: { width: `100%`, height: `40vh` },
+              svg: { width: `100%`, height: `30vh` },
               path: { animation: waveAnimation(`20s`) },
             }}
           >
@@ -44,7 +44,7 @@ const Footer = ({ siteTitle, menuLinks }) => {
       </Divider>
       <div>
         <nav>
-          <ul style={{ display: "flex", flex: 1, justifyContent: 'center', flexWrap: 'wrap' }}>
+          <ul style={{ display: "flex", flex: 1, justifyContent: 'center', flexWrap: 'wrap', marginTop: '-40px', marginBottom: '40px' }}>
             {menuLinks.map(link => (
               <li
                 key={link.name}

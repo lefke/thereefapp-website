@@ -30,7 +30,7 @@ const Hero = () => (
         sx={{ variant: `buttons.yellow`, mt: 3 }}
         href="http://thereefapp-25633844.hubspotpagebuilder.eu/the-reef-app-early-access"
         target="_blank"
-        role="link"
+        role="button"
         aria-label="Apply for early access"
       >
         Apply for early access

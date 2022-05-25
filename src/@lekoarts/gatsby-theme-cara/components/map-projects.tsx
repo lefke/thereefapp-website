@@ -24,8 +24,8 @@ const MapProjects = () => (
     bg="color_divider_bg"
     sx={{ height: `100%`, width: `100%`, clipPath: `polygon(0 0, 100% 100px, 100% 100%, 0 100%)` }}
     />
-    <Content sx={{ minHeight: "70vh", mt: [`100px`, `200px`, `300px`, `300px`] }}>
-        <img width="60%" height="auto" src="/platform-project.png" alt="coral restoration underwater platform" style={{marginTop: '-70px', position: "absolute", left: "10%", top: "0%", maxWidth: "700px" }} />
+    <Content sx={{ minHeight: "70vh", mt: [`100px`,`100px`, `200px`, `300px`, `300px`, `300px`] }}>
+        <img width="80%" height="auto" src="/platform-project.png" alt="coral restoration underwater platform" style={{marginTop: '-5vh', position: "absolute", left: "10%", top: "0%", maxWidth: "700px" }} />
         <UpDownWide>
             <img width="60%" height="auto" src="/shoal-collage.png"  alt="collage of shoal of fish" style={{position: "absolute", right: "0%", top: "54%", maxWidth: "350px"}} />        </UpDownWide>
       <Inner
@@ -44,9 +44,9 @@ const MapProjects = () => (
               to="/submit-project"
               target="_blank"
               role="link"
-              aria-label="Submit project"
+              aria-label="Add a project to the map"
           >
-              Submit your project
+              Add a project
           </Link>
         </div>
       </Inner>
