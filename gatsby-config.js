@@ -22,7 +22,7 @@ module.exports = {
         name:'home',
         link:'/#home'
       },
-      {
+      { 
         name:'projects',
         link:'/#section_projects'
       },
@@ -131,7 +131,7 @@ module.exports = {
     {
       resolve: "google-map-react",
       options: {
-        apiKey: process.env.GMAPS_ID,
+        apiKey: process.env.GATSBY_GMAPS_ID,
       },
     },{
     resolve: `gatsby-source-airtable`,
