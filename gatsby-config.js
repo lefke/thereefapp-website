@@ -144,6 +144,10 @@ module.exports = {
           tableName: `Projects`,
         },
       ],
+    },{
+      resolve: 'gatsby-plugin-netlify',
+      options: {    
+      },
     },
   },
   ].filter(Boolean),
